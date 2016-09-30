@@ -1,0 +1,135 @@
+/*
+ * Start Bootstrap - Full Slider (http://startbootstrap.com/)
+ * Copyright 2013-2016 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
+ */
+
+html,
+body {
+    height: 100%;
+    font-family: "Lato";
+}
+/**************** Parte 1 ****************/
+/* Navbar */
+.navbar-inverse{
+  background-color: #E01F26 !important;
+  color:#FFF;
+  border-color: #E01F26 !important;
+}
+
+.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form{
+  border-color: #FFF;
+}
+
+/* Color de la fuente del Menu*/
+.navbar-inverse .navbar-nav > li > a{
+  color:#FFF !important;
+}
+
+.navbar-toggle{
+  background-color: #610B0B !important;
+}
+
+.navbar-inverse .navbar-toggle{
+  border-color: white !important;
+}
+
+/* Media Query Navbar - Min 768px*/
+@media (min-width: 768px){
+  .navbar-header{
+    margin-left: -280px !important;
+    margin-right: 240px !important;
+  }
+
+  .navbar-nav {
+    float: left;
+    padding-bottom: 30px;
+    margin-top: -15px !important;
+    margin-left: 100px;
+  }
+
+  /* Bordes del Menú*/
+  li.border {
+    float: left;
+    margin-right: 0px;
+    border-right: 3px solid #FFF;
+    padding: 0 20px;
+  }
+
+  #logo{
+    margin-left: 20px;
+    margin-top: 10px;
+  }
+}
+
+/* Media de Navbar Max 600px y Max 780px*/
+@media (max-width: 600px) {
+
+    .fill{
+        height: 500px;
+        width: 100%;
+        background-position: center;
+    }
+
+    #logo{
+      width: 50px;
+      height: 20px;
+    }
+}
+
+@media (max-width: 780px){
+
+  #logo{
+    width: 75px;
+    height: 30px;
+    margin-top: -5px;
+  }
+}
+
+/**************** Parte 2 ****************/
+/* Carrusel */
+.carousel,
+.item,
+.active {
+    height: 750px;
+}
+
+.carousel-inner {
+    height: 100%;
+}
+
+/**************** Parte 3 ****************/
+.button{
+    background-image: url(img/figures/corners-1.svg);
+}
+
+/* Background images are set within the HTML using inline CSS, not here */
+
+.fill {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+footer {
+    margin: 50px;
+}
+
+.carousel-caption{
+}
+
+ul{
+    color:white;
+}
+
+h2{
+    display: inline-block;
+    height: 45px;
+    width: 200px;
+    text-align: center;
+    border: 3px solid #FFF;
+}
