@@ -69,8 +69,19 @@ body {
     padding-bottom: 30px;
     margin-top: -190px;
     font-size: 15px;
-
   }
+
+  /*Quienes Somos */
+  .quienesSomos{
+    margin-top: -120px;
+    /*height: 625px;*/
+  }
+
+  /* Figura Quienes Somos */
+  .figura{
+    height: 800px;
+  }
+
 }
 
 /* Media de Navbar Max 600px y Max 780px*/
@@ -111,16 +122,21 @@ body {
     left: 20%;
     padding-bottom: 30px;
     margin-top: -190px;
-
   }
+
+  /* Figura Quienes Somos */
+  .figura{
+    display: none;
+  }
+
 }
 
-@media (max-width: 320px){
+@media (max-width: 360px){
   .goButton h2{
-      height: 34px !important;
-      width: 150px !important;
-      font-size: 20px;
-      margin-top: 80px;
+      height: 25px !important;
+      width: 100px !important;
+      font-size: 15px;
+      margin-top: 145px;
   }
 }
 
@@ -193,14 +209,14 @@ ul{
     color: #FFF !important;
     border: 3px solid #FFF !important;
 }
+/* Linea Division hr */
+.division{
+  width: 15%;
+  height: 5px;
+  background-color: #424143;
+}
 
 /************************* Parte 4 - Mision y Vision ************************/
-.misionVision hr{
- /*font-family: "Lato";*/
- width: 15%;
- height: 5px;
- background-color: #424143;
-}
 
 /* Titulo */
 .titulo{
@@ -236,13 +252,17 @@ ul{
 }
 
 /************ Parte 5 - Quienes Somos ***************/
+
 .quienesSomos{
   background-color: #CDCCCE;
 }
 
-.quienesSomos hr{
-  /*font-family: "Lato";*/
-  width: 15%;
-  height: 5px;
-  background-color: #424143;
+/************ Parte 6 - Nuestra Presencia *************/
+.nuestraPresencia{
+  background-color: #CDCCCE;
+}
+
+/*************** Nuestra Presencia Imagen *************/
+.nuestraPresenciaImg{
+  background-color: #CDCCCE;
 }
