@@ -129,6 +129,10 @@ body {
     display: none;
   }
 
+  .arrows{
+    display: none;
+  }
+
 }
 
 @media (max-width: 360px){
@@ -214,11 +218,12 @@ ul{
   width: 15%;
   height: 5px;
   background-color: #424143;
+  border-top: none !important;
 }
 
 /************************* Parte 4 - Mision y Vision ************************/
 
-/* Titulo */
+/* Titulo de todas las secciones*/
 .titulo{
   font-weight: 800;
  margin-top:70px;
@@ -238,7 +243,7 @@ ul{
 
 /* Texto */
 .texto{
- font-color: 14px;
+ font-size: 14px;
  text-align: justify;
  color: #595A5C;
 }
@@ -273,9 +278,57 @@ ul{
 }
 
 /******************* Parte 8 - Nuestras soluciones - Descripcion ***********/
+
+/* Logos */
+.solucionesLogos{
+  display: inline-block;
+  margin: auto;
+}
+
+.tituloSoluciones{
+  font-weight: 800;
+  margin-top:70px;
+  text-align: left;
+  color: #E01F26;
+  font-size: 30px;
+}
+
+/* Texto */
+.textoSoluciones{
+ font-size: 25px;
+ text-align: justify;
+ color: #595A5C;
+}
+
+/* Boton Soluciones */
+.botonSoluciones{
+  width: 200px;
+  height: 50px;
+  background-color: #E01F26;
+  border: 2px solid #E01F26;
+  margin-top: 61px;
+}
+
+.botonSoluciones p{
+  font-size: 20px;
+  text-align: center;
+  color: #FFF;
+  margin-top: 5px;
+}
+
+/* Linea Division - Servicios hr */
+.divisionSoluciones{
+  width: 15%;
+  height: 5px;
+  margin-left: 1px;
+  background-color: #E01F26;
+  border-top: none !important;
+}
+
 .arrows{
-  width: 100px;
+  width: 200px;
   height: 100px;
+  margin-left: 405px;
 }
 
 .nuestrasSolucionesDesc{
