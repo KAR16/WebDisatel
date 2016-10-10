@@ -74,12 +74,17 @@ body {
   /*Quienes Somos */
   .quienesSomos{
     margin-top: -120px;
-    height: 625px;
+    height: 800px;
   }
 
   /* Figura Quienes Somos */
   .figura{
     height: 800px;
+  }
+
+  /* Corner 5 - Cuadro Blanco - Nuestra Presencia */
+  .corner5{
+    margin-top: 545px;
   }
 
 }
@@ -129,9 +134,59 @@ body {
     display: none;
   }
 
+/* Flechas de Nuestras Secciones */
   .arrows{
     display: none;
   }
+
+  /* Corner 5 - Cuadro Blanco - Nuestra Presencia */
+  .corner5{
+    margin-top: 575px;
+  }
+
+  /* Nuestras Soluciones */
+  /* Imagenes */
+  .solucionesImg{
+    height: 238px !important;
+  }
+
+  /* Logo */
+  .solucionesLogos{
+    margin-top: -185px !important;
+    height: 60px;
+  }
+
+  /* Titulo */
+  .tituloSoluciones{
+    font-size: 15px !important;
+    margin-top: -50px !important;
+  }
+
+  /* Linea Division */
+  .divisionSoluciones{
+    height: 3px !important;
+  }
+
+  /* Texto */
+  .textoSoluciones{
+    font-size: 10px !important;
+    margin-top: -45px;
+  }
+
+  /* Boton Ver Producto */
+  .botonSoluciones{
+    width: 100px !important;
+    height: 25px !important;
+    margin-top: -5px !important;
+  }
+
+  /* Boton Ver Producto */
+  .botonSoluciones p{
+    font-size: 10px !important;
+
+  }
+
+
 
 }
 
@@ -236,14 +291,9 @@ ul{
    color: #E01F26;
 }
 
-/* Sub-Titulo */
-.sub-titulo{
- color: #595A5C;
-}
-
 /* Texto */
 .texto{
- font-size: 14px;
+ font-size: 1.5em;
  text-align: justify;
  color: #595A5C;
 }
@@ -259,18 +309,26 @@ ul{
 /************ Parte 5 - Quienes Somos ***************/
 
 .quienesSomos{
-  background-color: #CDCCCE;
+  background-color: #CCCCCE;
+  background: url('../img/backgrounds/Artboard1.png') no-repeat;
 }
 
 /************ Parte 6 - Nuestra Presencia *************/
 .nuestraPresencia{
-  background-color: #CDCCCE;
+  background-color: #CCCCCE;
 }
+
+
 
 /************** Parte 7 - Nuestras Solcuiones - Botones ***************/
 .nuestrasSolucionesBtns{
-  background-color: #F7BE81;
+  background-color: #FFF;
 }
+
+.bloque{
+  background-color: #FFF;
+}
+
 /* Botones */
 .soluciones{
   display: block;
@@ -295,7 +353,7 @@ ul{
 
 /* Texto */
 .textoSoluciones{
- font-size: 25px;
+ font-size: 1.5em;
  text-align: justify;
  color: #595A5C;
 }
@@ -306,7 +364,7 @@ ul{
   height: 50px;
   background-color: #E01F26;
   border: 2px solid #E01F26;
-  margin-top: 61px;
+  margin-top: 80px;
 }
 
 .botonSoluciones p{
@@ -328,9 +386,52 @@ ul{
 .arrows{
   width: 200px;
   height: 100px;
-  margin-left: 405px;
+  margin-left: 348px;
 }
 
 .nuestrasSolucionesDesc{
-  background-color: #CCC;
+  background-color: #EEE;
+}
+
+/**************** Parte 9 - Contáctanos *********************/
+.contactanos{
+  background-color: #FFF;
+}
+
+/******************* Parte 10 - Contáctos ********************/
+.contactos{
+  background-color: #CCCCCE;
+}
+
+/* Titulo Contactos */
+.tituloContactos{
+  font-weight: 800;
+  margin-top: 70px;
+  text-align: left;
+  color: #E01F26;
+  font-size: 1.5em;
+}
+
+/* Texto Contactos */
+.textoContactos{
+  font-size: 1.5em;
+  text-align: left;
+  color: #595A5C;
+}
+
+/**************** Parte 11 - Disatel Logo ****************/
+/* Footer 1 - Gris */
+
+.disatelLogo{
+  margin-top: 110px !important;
+  display: block;
+  margin: auto;
+  margin-bottom: -35px !important;
+}
+
+/* Footer2 - Rojo */
+.disatelFooter2{
+  background-color: #e11b22;
+  height: 20px;
+  margin-top: -5px;
 }
