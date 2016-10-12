@@ -74,7 +74,7 @@ body {
   /*Quienes Somos */
   .quienesSomos{
     margin-top: -120px;
-    height: 800px;
+    background: url('../img/backgrounds/Artboard1.png');
   }
 
   /* Figura Quienes Somos */
@@ -82,9 +82,36 @@ body {
     height: 800px;
   }
 
-  /* Corner 5 - Cuadro Blanco - Nuestra Presencia */
-  .corner5{
-    margin-top: 545px;
+  /* Video Disatel */
+  .videoDisatel{
+    width: 919px;
+    height: 530px;
+    border: 15px solid black !important;
+  }
+
+  /* rectangulo1 - Cuadro Blanco - Nuestra Presencia */
+  .rectangulo1{
+    margin: auto;
+    margin-top: 460px;
+    width: 80%;
+  }
+
+  /* rectangulo2 - Cuadro Blanco - Nuestra Presencia */
+  .rectangulo2{
+    margin: auto;
+    margin-top: -35px;
+    width: 80%;
+  }
+
+  /* Nuestras Soluciones - Row */
+  .GPS{
+    margin-top: -50px;
+    background: url('../img/backgrounds/Artboard2.png');
+  }
+
+  /*Nuestras Soluciones - Titulo */
+  .tituloNS{
+    margin-top: 153px !important;
   }
 
 }
@@ -129,9 +156,25 @@ body {
     margin-top: -190px;
   }
 
+  /* Mision y Vision */
+  .misionVision p{
+    text-align: left;
+  }
+
   /* Figura Quienes Somos */
   .figura{
     display: none;
+  }
+
+  /* Texto Quienes Somos*/
+  .quienesSomos p{
+    text-align: left;
+  }
+
+  .videoDisatel{
+    width: 505px;
+    height: 298px;
+    border: 15px solid black !important;
   }
 
 /* Flechas de Nuestras Secciones */
@@ -139,15 +182,25 @@ body {
     display: none;
   }
 
-  /* Corner 5 - Cuadro Blanco - Nuestra Presencia */
-  .corner5{
-    margin-top: 575px;
+  /* rectangulo 1 - Cuadro Blanco - Nuestra Presencia */
+  .rectangulo1{
+    display: none;
+    margin: auto;
+    margin-top: 482px;
+    width: 80%;
+  }
+
+  /* Division2 hr */
+  .division2{
+    width: 10% !important;
   }
 
   /* Nuestras Soluciones */
   /* Imagenes */
   .solucionesImg{
-    height: 238px !important;
+    height: 270px !important;
+    width: 270px;
+    margin-left: 28px;
   }
 
   /* Logo */
@@ -158,45 +211,137 @@ body {
 
   /* Titulo */
   .tituloSoluciones{
-    font-size: 15px !important;
-    margin-top: -50px !important;
+    font-size: 20px !important;
+    margin-top: -140px !important;
+    margin-left: 37px;
   }
 
   /* Linea Division */
   .divisionSoluciones{
     height: 3px !important;
+    margin-left: 37px !important;
   }
 
   /* Texto */
   .textoSoluciones{
-    font-size: 10px !important;
-    margin-top: -45px;
+    margin: auto;
+    margin-top: -30px;
+    margin-left: 37px;
+    margin-right: -75px;
   }
 
   /* Boton Ver Producto */
   .botonSoluciones{
-    width: 100px !important;
-    height: 25px !important;
-    margin-top: -5px !important;
+    width: 275px !important;
+    height: 50px !important;
+    margin-top: 8px !important;
+    margin-left: 37px;
+    margin-bottom: 10px;
   }
 
-  /* Boton Ver Producto */
-  .botonSoluciones p{
-    font-size: 10px !important;
-
+  /* rectangulo2 - Cuadro Blanco - Nuestra Presencia */
+  .rectangulo2{
+    margin: auto;
+    margin-top: -13px !important;
+    width: 80%;
+    display: none;
   }
 
+  /* Nuestras Soluciones - Row */
+  .GPS{
+    margin-top: 20px;
+  }
 
+  /*Nuestras Soluciones - Titulo */
+  .tituloNS{
+    margin-top: 110px !important;
+  }
+
+  /* Logos Soluciones Disatel*/
+  .solucionesLogos{
+    display: none !important;
+  }
 
 }
 
 @media (max-width: 360px){
+  /* Carrusel */
+  .carousel{
+    height: 500px !important;
+  }
+  /* Boton Vamos */
   .goButton h2{
       height: 25px !important;
       width: 100px !important;
       font-size: 15px;
       margin-top: 145px;
   }
+
+  /* Background Quienes Somos */
+  .quienesSomos{
+    background-color: #CCCCCE !important;
+  }
+  /* Texto */
+  .quienesSomos p{
+    text-align: left;
+  }
+
+  /* Division2 hr */
+  .division2{
+    width: 10% !important;
+  }
+  /* Video Disatel */
+  .videoDisatel{
+    width: 270px;
+    height: 166px;
+    border: 15px solid black !important;
+  }
+
+  /* rectangulo 1 - Cuadro Blanco - Nuestra Presencia */
+  .rectangulo1{
+    display: none;
+  }
+
+  /* Nuestras Soluciones - Row */
+  .GPS{
+    margin-top: 20px;
+  }
+
+  /* Soluciones Imgagenes */
+  .solucionesImg{
+    width: 270px;
+    height: 270px !important;
+    margin: auto;
+    margin-left: 30px;
+  }
+
+  /* Titulo */
+  .tituloSoluciones{
+    font-size: 1.5em !important;
+    margin-top: -140px !important;
+    margin-left: 30px;
+  }
+
+  /* Division Soluciones*/
+  .divisionSoluciones{
+    margin-left: 30px !important;
+  }
+
+  /* Texto Soluciones*/
+  .textoSoluciones{
+    margin: auto;
+    margin-top: -30px;
+    margin-left: 30px;
+    margin-right: -25px;
+  }
+
+  /* Boton Ver Producto */
+  .botonSoluciones{
+    width: 270px !important;
+    margin-left: 30px;
+    margin-bottom: 10px;
+  }
+
 }
 
 /**************** Parte 2  - Carrusel****************/
@@ -224,8 +369,6 @@ body {
 /**************** Parte 3 - Boton Vamos ****************/
 .button{
   height: 100px;
-  /*background: url("http://www.w3.org/2000/svg/corners-1.svg") no-repeat;*/
-  /*background-color: #e11b22;*/
 }
 
 /* Background images are set within the HTML using inline CSS, not here */
@@ -268,9 +411,17 @@ ul{
     color: #FFF !important;
     border: 3px solid #FFF !important;
 }
-/* Linea Division hr */
+/* Linea Division hr: Mision y Vision y Quienes Somos */
 .division{
-  width: 15%;
+  width: 10%;
+  height: 5px;
+  background-color: #424143;
+  border-top: none !important;
+}
+
+/* Linea Division hr: Nuestra Presencia, Nuestras Soluciones, Contáctanos */
+.division2{
+  width: 5%;
   height: 5px;
   background-color: #424143;
   border-top: none !important;
@@ -281,10 +432,10 @@ ul{
 /* Titulo de todas las secciones*/
 .titulo{
   font-weight: 800;
- margin-top:70px;
+  margin-top:70px;
  text-align: center;
  color: #424143;
- font-size: 30px;
+ font-size: 1.8em;
 }
 
 .titulo span{
@@ -310,22 +461,18 @@ ul{
 
 .quienesSomos{
   background-color: #CCCCCE;
-  background: url('../img/backgrounds/Artboard1.png') no-repeat;
 }
 
 /************ Parte 6 - Nuestra Presencia *************/
 .nuestraPresencia{
   background-color: #CCCCCE;
+  margin-top: -15px;
 }
 
 
 
 /************** Parte 7 - Nuestras Solcuiones - Botones ***************/
 .nuestrasSolucionesBtns{
-  background-color: #FFF;
-}
-
-.bloque{
   background-color: #FFF;
 }
 
@@ -341,6 +488,7 @@ ul{
 .solucionesLogos{
   display: inline-block;
   margin: auto;
+  margin-top: 105px;
 }
 
 .tituloSoluciones{
@@ -364,14 +512,15 @@ ul{
   height: 50px;
   background-color: #E01F26;
   border: 2px solid #E01F26;
-  margin-top: 80px;
+  margin-top: 96px;
 }
 
+/*Boton Soluciones Texto*/
 .botonSoluciones p{
-  font-size: 20px;
+  font-size: 1.5em;
   text-align: center;
   color: #FFF;
-  margin-top: 5px;
+  margin-top: 7px;
 }
 
 /* Linea Division - Servicios hr */
@@ -384,9 +533,9 @@ ul{
 }
 
 .arrows{
-  width: 200px;
+  width: 230px;
   height: 100px;
-  margin-left: 348px;
+  margin-left: 374px;
 }
 
 .nuestrasSolucionesDesc{
