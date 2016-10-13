@@ -34,6 +34,55 @@ body {
   border-color: white !important;
 }
 
+/* Media Query Max 1920px */
+@media (max-width: 1920px){
+  /* Navbar */
+  .navbar-nav{
+    margin-left: 78px !important;
+  }
+
+  /* Quienes Somos */
+  .quienesSomos{
+    margin-top: 0px !important;
+  }
+}
+
+/* Media Query Max 1280 */
+@media (max-width: 1280px){
+  /* Navbar - Menu */
+  .navbar-nav{
+    margin-left: 190px !important;
+    font-size: 11px !important;
+    margin-right: -70px !important;
+  }
+
+  /* Navbar - Logo Disatel */
+  .logo{
+    margin-left: 270px !important;
+  }
+
+  /* Boton Vamos */
+  .goButton{
+    margin-top: -140px !important;
+  }
+
+  /* Video Disatel */
+  .videoDisatel{
+    width: 609px !important;
+    height: 356px !important;
+  }
+
+  /* Nuestras Soluciones - Row */
+  .GPS{
+    margin-top: -35px !important;
+  }
+
+  /* Arrows*/
+  .flechas{
+    margin-left: 165px !important;
+  }
+}
+
 /* Media Query - Min 768px*/
 @media (min-width: 768px){
   /* Navbar */
@@ -57,9 +106,9 @@ body {
     padding: 0 20px;
   }
 
-  #logo{
-    margin-left: 20px;
-    margin-top: 10px;
+  .logo{
+    margin-left: 20px !important;
+    margin-top: 10px !important;
   }
 
   /* Boton Vamos */
@@ -125,7 +174,7 @@ body {
         background-position: center;
     }
 
-    #logo{
+    .logo{
       width: 50px;
       height: 20px;
     }
@@ -133,7 +182,7 @@ body {
 
 @media (max-width: 780px){
 
-  #logo{
+  .logo{
     width: 75px;
     height: 30px;
     margin-top: -5px;
@@ -178,7 +227,7 @@ body {
   }
 
 /* Flechas de Nuestras Secciones */
-  .arrows{
+  .flechas{
     display: none;
   }
 
@@ -532,7 +581,7 @@ ul{
   border-top: none !important;
 }
 
-.arrows{
+.flechas{
   width: 230px;
   height: 100px;
   margin-left: 374px;
