@@ -249,12 +249,12 @@ footer {
 .solucionesLogos{
   display: inline-block;
   margin: auto;
-  margin-top: 105px;
+  margin-top: 16%;
 }
 
 .tituloSoluciones{
   font-weight: 800;
-  margin-top:70px;
+  margin-top: 5%;
   text-align: left;
   color: #E01F26;
   font-size: 1.5em !important;
@@ -265,6 +265,7 @@ footer {
  font-size: 1.5em;
  text-align: left;
  color: #595A5C;
+ margin-top: -4%;
 }
 
 /* Boton Soluciones */
@@ -273,7 +274,7 @@ footer {
   height: 50px;
   background-color: #E01F26;
   border: 2px solid #E01F26;
-  margin-top: 26%;
+  margin-top: 28% !important;
   margin-bottom: 2%;
 
 }
@@ -295,15 +296,23 @@ footer {
   border-top: none !important;
 }
 
-.col-lg-4 .flechas{
+/* Flechas */
+.flechas{
   width: 50%;
-  align-items: right;
-  margin-left: 50%;
+  float: right;
+  padding-bottom: 2%;
+}
+
+/* Soluciones Imagenes */
+.solucionesImg{
+  float: right;
+  padding-bottom: 2%;
 }
 
 .nuestrasSolucionesDesc{
   background-color: #EEE;
 }
+
 
 /**************** Parte 11 - Disatel Logo ****************/
 /* Footer 1 - Gris */
@@ -322,6 +331,12 @@ margin-top: -1%;
 }
 
 /**************************** Media Querys *****************************/
+@media (max-width: 1090px){
+  .botonSoluciones{
+    margin-top: 0% !important;
+  }
+}
+
 @media (max-width: 768px){
 
   /* Navbar - Logo Disatel*/
