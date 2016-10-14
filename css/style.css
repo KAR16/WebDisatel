@@ -212,11 +212,12 @@ footer {
 
 /* Nuestra Presencia - Mapa */
 .mapa{
-  margin-top: 10%;
+  margin-top: 10% !important;
+  margin-bottom: 5% !important;
 }
 
 .mexico{
-  margin-top: 50%;
+  margin-top: 40% !important;
 }
 
 /************** Parte 7 - Nuestras Solcuiones - Botones ***************/
@@ -350,10 +351,11 @@ margin-top: -1%;
   /* Nuestra Presencia - Mapa */
   .mapa{
     margin-top: 20%;
+    height: 475px;
   }
 
   .mexico{
-    margin-top: 20%;
+    margin-top: 55%
   }
 
   /* Flechas de Nuestras Secciones */
@@ -411,16 +413,18 @@ margin-top: -1%;
 
   /* Titulo */
   .tituloSoluciones{
-    /*font-size: 1.5em !important;*/
     margin-top: -5% !important;
   }
-
-
 
   /* Boton Ver Producto */
   .botonSoluciones{
     width: 100% !important;
     margin-bottom: 5% !important;
+  }
+
+  .mapa{
+    margin-top: 20%;
+    height: 475px;
   }
 
 }
