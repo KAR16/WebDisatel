@@ -95,6 +95,16 @@ footer {
     background: url('../img/backgrounds/Artboard2.png');
   }
 
+  /* Nuestras Soluciones - TMT */
+  .TMT{
+    background: url('../img/backgrounds/Artboard3.png');
+  }
+
+  /* Nuestras Soluciones - SAT */
+  .SAT{
+    background: url('../img/backgrounds/Artboard2.png');
+  }
+
 }
 
 /**************** Parte 2  - Carrusel****************/
