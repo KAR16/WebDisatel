@@ -398,11 +398,27 @@ margin-top: -1%;
       display: none;
     }
 
+    /* Titulo Soluciones */
+    .tituloSoluciones{
+      margin-left: 1%;
+    }
+
+    /* Division Soluciones */
+    .divisionSoluciones{
+      margin-left: 1%;
+    }
+
+    /* Texto Soluciones */
+    .textoSoluciones{
+      margin-left: 1%;
+    }
+
     /* Boton Ver Producto */
     .botonSoluciones{
       width: 305px !important;
       height: 50px !important;
       margin-top: 5% !important;
+      margin-left: 1%;
     }
 
 }
@@ -434,12 +450,14 @@ margin-top: -1%;
   /* Titulo */
   .tituloSoluciones{
     margin-top: -5% !important;
+    margin-left: 0% !important;
   }
 
   /* Boton Ver Producto */
   .botonSoluciones{
     width: 100% !important;
     margin-bottom: 5% !important;
+    margin-left: 0% !important;
   }
 
   /* Nuestra Presencia */
