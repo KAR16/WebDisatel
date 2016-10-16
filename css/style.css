@@ -275,7 +275,7 @@ footer {
   height: 50px;
   background-color: #E01F26;
   border: 2px solid #E01F26;
-  margin-top: 28% !important;
+  margin-top: 24% !important;
   margin-bottom: 2%;
 
 }
@@ -371,8 +371,7 @@ margin-top: -1%;
 
   /* Nuestra Presencia - Mapa */
   .mapa{
-    margin-top: 25% !important;
-    height: 475px;
+    display: none;
   }
 
   .mexico{
@@ -448,12 +447,13 @@ margin-top: -1%;
     padding-bottom: 6%;
   }
 
-  .mapa{
-    display: none;
-  }
-
   .mexico{
     margin-top: 5% !important;
   }
+
+  /* Footer Rojo */
+  .disatelFooter2 {
+    margin-top: -3%;
+}
 
 }
