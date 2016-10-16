@@ -100,10 +100,50 @@ footer {
     background: url('../img/backgrounds/Artboard3.png');
   }
 
+  .TMT .botonSoluciones{
+    margin-top: 22% !important;
+  }
+
   /* Nuestras Soluciones - SAT */
   .SAT{
     background: url('../img/backgrounds/Artboard2.png');
   }
+
+  /* Nuestras Soluciones - VIDEO */
+  .VIDEO{
+    background: url('../img/backgrounds/Artboard3.png');
+  }
+
+  .VIDEO .botonSoluciones{
+    margin-top: 18% !important;
+  }
+  /* Nuestras Soluciones - MOVIL */
+  .MOVIL{
+    background: url('../img/backgrounds/Artboard2.png');
+  }
+
+  .MOVIL .botonSoluciones{
+    margin-top: 25% !important
+  }
+
+  /* Nuestras Soluciones - LOCK */
+  .LOCK{
+    background: url('../img/backgrounds/Artboard3.png');
+  }
+
+  .LOCK .botonSoluciones{
+    margin-top: 28% !important
+  }
+
+  /* Nuestras Soluciones - WIFI */
+  .WIFI{
+    background: url('../img/backgrounds/Artboard2.png');
+  }
+
+  .WIFI .botonSoluciones{
+    margin-top: 25% !important
+  }
+
 
 }
 
