@@ -276,7 +276,7 @@ footer {
   background-color: #E01F26;
   border: 2px solid #E01F26;
   margin-top: 24% !important;
-  margin-bottom: 2%;
+  margin-bottom:  10%;
 
 }
 
@@ -456,7 +456,7 @@ margin-top: -1%;
   /* Boton Ver Producto */
   .botonSoluciones{
     width: 100% !important;
-    margin-bottom: 5% !important;
+    margin-bottom:  10% !important;
     margin-left: 0% !important;
   }
 
