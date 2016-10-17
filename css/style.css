@@ -114,16 +114,9 @@ footer {
     background: url('../img/backgrounds/Artboard3.png');
   }
 
-  .VIDEO .botonSoluciones{
-    margin-top: 18% !important;
-  }
   /* Nuestras Soluciones - MOVIL */
   .MOVIL{
     background: url('../img/backgrounds/Artboard2.png');
-  }
-
-  .MOVIL .botonSoluciones{
-    margin-top: 25% !important
   }
 
   /* Nuestras Soluciones - LOCK */
@@ -132,7 +125,7 @@ footer {
   }
 
   .LOCK .botonSoluciones{
-    margin-top: 28% !important
+    margin-top: 28% !important;
   }
 
   /* Nuestras Soluciones - WIFI */
@@ -140,9 +133,12 @@ footer {
     background: url('../img/backgrounds/Artboard2.png');
   }
 
-  .WIFI .botonSoluciones{
-    margin-top: 25% !important
+  /* Nuestras Soluciones */
+  .nuestrasSolucionesDesc{
+    padding-right: 10%;
+    padding-bottom: 5%;
   }
+
 
 
 }
@@ -326,7 +322,6 @@ footer {
   background-color: #E01F26;
   border: 2px solid #E01F26;
   margin-top: 24% !important;
-  margin-bottom:  10%;
 
 }
 
@@ -364,6 +359,52 @@ footer {
   background-color: #EEE;
 }
 
+.nuestrasSolucionesTitulo{
+  background-color: #EEE;
+}
+
+/**************** Parte 9  - Contactanos Formularios ****************/
+input {
+  /*width: 200%;*/
+  -moz-placeholder: color: red; font-weight: bold;
+}
+
+input::-webkit-input-placeholder {
+    color:    #c00;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+textarea {
+  width: 200%;
+}
+
+/********************* Parte 10 - Contactanos Numeros *****************/
+
+/* Titulo Paises */
+.tituloPaises{
+  font-weight: 800;
+  margin-top: 5%;
+  text-align: left;
+  color: #E01F26;
+  font-size: 2em !important;
+}
+
+.contTelefonos{
+  background-color: #CCCCCE;
+}
+
+/* Bloque de Contactos 1 */
+.bloqueCont1{
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+/* Bloque de Contactos 2 */
+.bloqueCont2{
+  padding-left: 10%;
+  padding-right: 10%;
+}
 
 /**************** Parte 11 - Disatel Logo ****************/
 /* Footer 1 - Gris */
@@ -471,6 +512,18 @@ margin-top: -1%;
       margin-left: 1%;
     }
 
+    /* Bloque de Telefono 1*/
+    .bloqueCont1 {
+      padding-left: 30%;
+      padding-right: 30%;
+    }
+
+    /* Bloque de Telefono 2*/
+    .bloqueCont2 {
+      padding-left: 30%;
+      padding-right: 30%;
+    }
+
 }
 
 
@@ -522,6 +575,19 @@ margin-top: -1%;
   /* Footer Rojo */
   .disatelFooter2 {
     margin-top: -3%;
-}
+  }
+
+  /* Bloque de Telefono 1*/
+  .bloqueCont1 {
+      padding-left: 15%;
+      padding-right: 15%;
+  }
+
+  /* Bloque de Telefono 2*/
+  .bloqueCont2 {
+      padding-left: 15%;
+      padding-right: 15%;
+  }
+
 
 }
