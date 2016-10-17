@@ -380,6 +380,9 @@ textarea {
 }
 
 /********************* Parte 10 - Contactanos Numeros *****************/
+.contTelefonos{
+  background-color: #CCCCCE;
+}
 
 /* Titulo Paises */
 .tituloPaises{
@@ -388,10 +391,6 @@ textarea {
   text-align: left;
   color: #E01F26;
   font-size: 2em !important;
-}
-
-.contTelefonos{
-  background-color: #CCCCCE;
 }
 
 /* Bloque de Contactos 1 */
