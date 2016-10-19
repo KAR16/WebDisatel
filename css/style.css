@@ -173,6 +173,54 @@ footer {
   width: 27px !important;
   height: 27px !important;
 }
+
+/* Animacion Banner */
+.world{
+    position: absolute;
+    display: block;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 70%;
+    height: auto;
+    max-width: 500px;
+    animation: world 3s infinite;
+}
+
+.logo-slide{
+    position: absolute;
+    display: block;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    max-width: 70%;
+}
+
+@keyframes world{
+    0%{
+        transform: scale(1) rotate(0deg);
+/*        transform: rotate(0deg);*/
+    }
+    50%{
+        transform: scale(0.6) rotate(180deg);
+/*        transform: rotate(360deg);*/
+    }
+    100%{
+        transform: scale(1) rotate(360deg);
+/*        transform: rotate(0deg);*/
+    }
+}
+
+.item.main .fill{
+    background-position: top;
+    background-color: #E01F26;
+    background-blend-mode: multiply;
+}
+
 /**************************** Parte 3 - Boton Vamos *************************/
 
 .botonVamos{
@@ -380,13 +428,11 @@ footer {
 /**************** Parte 9  - Contactanos Formularios ****************/
 /* Contenedor del Formulario*/
 .formulario{
-  border: 3px solid black;
   background: -webkit-linear-gradient(0deg, #FFF, #EEE, #CCCCCE);
   margin-bottom: 10%;
 }
 
 .formulario .row{
-  border: 3px solid black;
   padding-top: 5%;
   padding-left: 5%;
   padding-right: 5%;
@@ -573,6 +619,10 @@ textarea::-moz-placeholder{
   /* Carrusel */
   .carousel{
     height: 500px !important;
+  }
+
+  .item, .carousel-inner, .carousel{
+      max-height: 450px;
   }
 
   /* Navbar - Logo Disatel*/
