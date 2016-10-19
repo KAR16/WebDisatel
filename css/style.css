@@ -95,13 +95,17 @@ footer {
     background: url('../img/backgrounds/Artboard2.png');
   }
 
+  .GPS .botonSoluciones{
+    margin-top: 27% !important;
+  }
+
   /* Nuestras Soluciones - TMT */
   .TMT{
     background: url('../img/backgrounds/Artboard3.png');
   }
 
   .TMT .botonSoluciones{
-    margin-top: 22% !important;
+    margin-top: 20.3% !important;
   }
 
   /* Nuestras Soluciones - SAT */
@@ -125,7 +129,7 @@ footer {
   }
 
   .LOCK .botonSoluciones{
-    margin-top: 28% !important;
+    margin-top: 31% !important;
   }
 
   /* Nuestras Soluciones - WIFI */
@@ -139,9 +143,18 @@ footer {
     padding-bottom: 5%;
   }
 
+  /* CheckList */
+  .checkMOVIL{
+    margin-left: 25% !important;
+  }
 
+  .checkLOCK{
+    margin-left: 13% !important;
+  }
 
-
+  .checkWIFI{
+    margin-left: 16% !important;
+  }
 
 }
 
@@ -273,7 +286,7 @@ footer {
 /* Rectangulo 1 */
 .rectangulo1{
   width: 85%;
-  margin-left: 8%;
+  margin-left: 7%;
 }
 /* Botones */
 .nuestrasSolucionesBtns{
@@ -288,9 +301,8 @@ footer {
 
 /* Rectangulo 2 */
 .rectangulo2{
-  /*margin-top: 32%;*/
-  width: 85%;
-  margin-left: 8%;
+  width: 86.3%;
+  margin-left: 6.3%;
 }
 /******************* Parte 8 - Nuestras soluciones - Descripcion ***********/
 
@@ -370,7 +382,6 @@ footer {
 .formulario{
   border: 3px solid black;
   background: -webkit-linear-gradient(0deg, #FFF, #EEE, #CCCCCE);
-  height: 200%;
   margin-bottom: 10%;
 }
 
@@ -389,7 +400,7 @@ footer {
 /* Input Text - Nombre, Pais, Telefono */
 input[type="text"]{
   height: 50px;
-  width: 500px;
+  width: 100%;
   color: black;
   border: 1px solid #E01F26;
   padding-left: 3%;
@@ -413,7 +424,7 @@ input[type="text"]::-moz-placeholder{
 /* Input Email - Email */
 input[type="email"]{
   height: 50px;
-  width: 500px;
+  width: 100%;
   color: black;
   border: 1px solid #E01F26;
   padding-left: 3%;
@@ -437,7 +448,7 @@ input[type="email"]::-moz-placeholder{
 
 /* Input checkbox - Soluciones */
 .spanSoluciones{
-  width: 500px;
+  width: 100%;
   height: 50px;
   font-weight: bold;
   font-size: 1.5em;
@@ -455,45 +466,20 @@ input[type="email"]::-moz-placeholder{
 
 /* checkboxList */
 .checkboxList{
-  width: 500px;
+  width: 100%;
   font-weight: bold;
   border: 1px solid red;
   background-color: #FFF;
   padding-top: 3%;
   color: #E01F26;
+  padding-bottom: 3%;
 }
 
 /* Checkbox list 1 */
 .list{
   margin-bottom: 2%;
-}
-
-.checkGPS{
-  margin-left: 3% !important;
-}
-
-.checkMOVIL{
-  margin-left: 25% !important;
-}
-
-.checkTMT{
-  margin-left: 3% !important;
-}
-
-.checkLOCK{
-  margin-left: 13% !important;
-}
-
-.checkSAT{
-  margin-left: 3% !important;
-}
-
-.checkWIFI{
-  margin-left: 16% !important;
-}
-
-.checkVIDEO{
-  margin-left: 3% !important;
+  display: inline;
+  padding-left: 3%;
 }
 
 input[type="checkbox"]{
@@ -503,8 +489,8 @@ input[type="checkbox"]{
 
 /* Text Area */
 textarea{
-  height: 400px;
-  width: 500px;
+  height: 368px;
+  width: 100%;
   color: black;
   border: 1px solid #E01F26;
   font-size: 1em;
@@ -529,8 +515,8 @@ textarea::-moz-placeholder{
 
 /*Boton Enviar */
 .enviar{
-  margin-top: 1% !important;
-  width: 500px;
+  margin-top: 0% !important;
+  width: 100%;
 }
 
 /********************* Parte 10 - Contactanos Numeros *****************/
@@ -572,7 +558,7 @@ textarea::-moz-placeholder{
 .disatelFooter2{
   background-color: #e11b22;
   height: 20px;
-margin-top: -1%;
+  margin-top: -1%;
 }
 
 /**************************** Media Querys *****************************/
@@ -678,10 +664,16 @@ margin-top: -1%;
       padding-right: 30%;
     }
 
+    .checkboxList{
+      margin-bottom: 10px;
+    }
+
+    .list {
+      margin-bottom: 2%;
+      padding-left: 3%;
+      display: block;
+    }
 }
-
-
-
 
 @media (max-width: 360px){
   /* Boton Vamos */
@@ -742,6 +734,5 @@ margin-top: -1%;
       padding-left: 15%;
       padding-right: 15%;
   }
-
 
 }
