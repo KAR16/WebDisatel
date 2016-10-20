@@ -85,6 +85,14 @@ footer {
     height: 10% !important;
   }
 
+  /* Boton Vamos */
+  .botonVamos{
+    right: 20%;
+    left: 20%;
+    padding-bottom: 30px;
+    font-size: 15px;
+  }
+
   /*Quienes Somos */
   .quienesSomos{
     background: url('../img/backgrounds/Artboard1.png');
@@ -121,6 +129,10 @@ footer {
   /* Nuestras Soluciones - MOVIL */
   .MOVIL{
     background: url('../img/backgrounds/Artboard2.png');
+  }
+
+  .MOVIL .botonSoluciones{
+    margin-top: 27.7% !important;
   }
 
   /* Nuestras Soluciones - LOCK */
@@ -224,23 +236,33 @@ footer {
 /**************************** Parte 3 - Boton Vamos *************************/
 
 .botonVamos{
+  display: block;
+  margin: auto;
   text-align: center;
-  color: #fff;
-  margin-top: -13%;
+  padding-top: 2%;
 }
 
 
 .botonVamos h2{
-  display: inline-block;
+  margin: auto;
   height: 45px;
-  width: 25%;
+  max-width: 200px;
+  min-width: 100px;
   font-weight: 800;
   text-align: center;
   color: #FFF !important;
   border: 3px solid #FFF !important;
+  font-size: 1.5em;
+
 }
 
+.extra-row{
+    background-color: #E01F26;
+}
 
+.cornerRojo1{
+  margin-top: -1px;
+}
 /************************* Parte 4 - Mision y Vision ************************/
 
 /* Titulo de todas las secciones*/
@@ -634,19 +656,7 @@ textarea::-moz-placeholder{
 
   /* Boton Vamos */
   .botonVamos h2{
-    height: 34px !important;
-    width: 25% !important;
-    font-size: 20px;
-    margin-top: 19%;
-  }
-
-  .botonVamos{
-    margin-top: 10px;
-    font-size: 10px;
-    right: 20%;
-    left: 20%;
-    padding-bottom: 30px;
-    margin-top: -30%;
+    height: 10% !important;
   }
 
   /* Nuestra Presencia - Mapa */
@@ -726,24 +736,10 @@ textarea::-moz-placeholder{
 }
 
 @media (max-width: 360px){
-  /* Boton Vamos */
-  .botonVamos{
-    margin-top: -60% !important;
-  }
 
   /* Boton Vamos */
   .botonVamos h2{
-    height: 5% !important;
-    width: 30% !important;
-    font-size: 15px;
-    margin-top: 46%;
-  }
-
-  botonVamos h2{
-      height: 25px !important;
-      width: 100px !important;
-      font-size: 15px;
-      margin-top: 145px;
+    height: 6% !important;
   }
 
   /* Titulo */

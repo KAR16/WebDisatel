@@ -22,10 +22,10 @@
 
 <body>
 
-  <!-- Navigation -->
+  <!-- Barra de Navegación -->
   <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
       <div class="container">
-          <!-- Brand and toggle get grouped for better mobile display -->
+          <!-- Navbar Header -->
           <div class="navbar-header">
               <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
                   <span class="sr-only">Toggle navigation</span>
@@ -35,7 +35,7 @@
               </button>
               <a class="navbar-brand" href="#"><img class=" logo img-responsive" src="img/assets/menu-logo.png"/></a>
           </div>
-          <!-- Collect the nav links, forms, and other content for toggling -->
+          <!-- Menu del Navbar -->
           <div class="navbar-collapse collapse" id="bs-example-navbar-collapse-1" aria-expanded="false" style="height: 1px;">
               <ul class="nav navbar-nav">
                 <li class="border"><a href="#"><b>INICIO</b></a></li>
@@ -51,7 +51,7 @@
       <!-- /.container -->
   </nav>
 
-  <!-- Full Page Image Background Carousel Header -->
+  <!-- Carrusel -->
   <header id="myCarousel" class="carousel slide">
       <!-- Indicadores -->
       <ol class="carousel-indicators">
@@ -64,7 +64,10 @@
       <div class="carousel-inner">
           <div class="item">
               <!-- Imagen 1 -->
-              <div class="fill" style="background-image:url(img/caratula/b1.jpg);"></div>
+              <div class="fill" style="background-image:url(img/caratula/b1.jpg);">
+                <img class="logo-slide" src="img/assets/logo-big.png" alt="">
+                <img class="world" src="img/assets/world.png" alt="">
+              </div>
           </div>
           <div class="item">
               <!-- Imagen 2 -->
@@ -73,10 +76,7 @@
           </div>
           <div class="item active">
               <!-- Imagen 3 -->
-              <div class="fill" style="background-image:url(img/caratula/b3.jpg);">
-                <img class="logo-slide" src="img/assets/logo-big.png" alt="">
-                <img class="world" src="img/assets/world.png" alt="">
-              </div>
+              <div class="fill" style="background-image:url(img/caratula/b3.jpg);"></div>
           </div>
       </div>
 
@@ -96,20 +96,20 @@
       <!-- Boton Vamos -->
       <a name="MV"></a>
       <div class="row boton">
-        <!-- 1. Corner Rojo 1 -->
-        <svg class="cor" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1259.39 166.03">
-          <defs>
-            <style>.cls-1{fill:#e11b22;}</style>
-          </defs>
-          <title>corners-rojo-1</title>
-          <polygon class="cls-1" points="1259.39 0 0 0 0 60.66 629.7 166.03 1259.39 60.66 1259.39 0"/>
-
-        </svg>
-          <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12">
+        <div class="col-lg-12 extra-row">
             <div class="botonVamos">
               <a href="index.html#MV"><h2>¡VAMOS!</h2></a>
             </div>
-          </div>
+        </div>
+
+        <!-- 1. Corner Rojo 1 -->
+        <svg class="cornerRojo1" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1259.4 105.4" style="enable-background:new 0 0 1259.4 105.4;" xml:space="preserve">
+        <style type="text/css">
+        	.cls-1{fill:#E11B22;}
+        </style>
+        <title>corners-1</title>
+        <polygon class="cls-1" points="0,0 629.7,105.4 1259.4,0 "/>
+        </svg>
       </div>
 
       <!-- Mision y Vision -->
@@ -148,17 +148,18 @@
          </svg>
          <div class="col-lg-3 col-sm-3 col-md-3"></div>
          <div class="col-lg-6 col-xs-12 col-sm-6 col-md-6">
-             <strong><h1 class="titulo">QUIÉNES <span>SOMOS</span></h1></strong><hr class="division"><br><br>
+           <!-- Titulo -->
+           <strong><h1 class="titulo">QUIÉNES <span>SOMOS</span></h1></strong><hr class="division"><br><br>
 
-             <p class="texto">Somos una corporación multinacional constituida en el año 2002 con 14 años de experiencia en el mercado mexicano y centroamericano.</p><br>
+           <!-- Texto  -->
+           <p class="texto">Somos una corporación multinacional constituida en el año 2002 con 14 años de experiencia en el mercado mexicano y centroamericano.</p><br>
 
-             <p class="texto">Nuestro valor corporativo es la generación, recepción, procesamiento e interpretación de data generada a través de diversos dispositivos instalados en unidades móviles y estacionarias. La data captada es interpretada en conjunción con sistemas de software propietarios que nos permiten proveer servicios integrados de control, rastreo, localización, seguridad, telemetría y trazabilidad.</p><br>
+           <p class="texto">Nuestro valor corporativo es la generación, recepción, procesamiento e interpretación de data generada a través de diversos dispositivos instalados en unidades móviles y estacionarias. La data captada es interpretada en conjunción con sistemas de software propietarios que nos permiten proveer servicios integrados de control, rastreo, localización, seguridad, telemetría y trazabilidad.</p><br>
 
-             <p class="texto">Nos especializamos en soluciones AVL (Automatic Vehicle Location) para el monitoreo, administración, seguimiento logístico y localización de flotillas comerciales y vehículos particulares utilizados para cualquier fin. Además ofrecemos servicios de telemetría, marchamos electrónicos para el control de carga, aplicaciones móviles y monitoreo por video de unidades en movimiento.</p><br>
+           <p class="texto">Nos especializamos en soluciones AVL (Automatic Vehicle Location) para el monitoreo, administración, seguimiento logístico y localización de flotillas comerciales y vehículos particulares utilizados para cualquier fin. Además ofrecemos servicios de telemetría, marchamos electrónicos para el control de carga, aplicaciones móviles y monitoreo por video de unidades en movimiento.</p><br>
 
-             <!-- Video Disatel -->
-             <video class="videoDisatel" src="video/newbb.mp4" controls>
-             </video>
+           <!-- Video Disatel -->
+           <video class="videoDisatel" src="video/newbb.mp4" controls></video>
 
              <!-- Nuestra Presencia -->
              <strong><h1 class="titulo">NUESTRA <span>PRESENCIA</span></h1></strong><hr class="division2"><br><br>
@@ -226,29 +227,30 @@
            <div class="row">
              <div class="col-lg-4 col-xs-0 col-sm-4 col-md-4">
                <!-- Disatel GPS -->
-               <img class="soluciones img-responsive" src="img/assets/disatel-gps.png" alt="Disatel GPS"/><br>
+               <a href="index.html#GPS"><img class="soluciones img-responsive" src="img/assets/disatel-gps.png" alt="Disatel GPS"/></a><br>
                <!-- Disatel Video -->
-               <img class="soluciones img-responsive" src="img/assets/disatel-video.png" alt="Disatel Video"/>
+               <a href="index.html#VIDEO"><img class="soluciones img-responsive" src="img/assets/disatel-video.png" alt="Disatel Video"/></a>
              </div>
 
              <div class="col-lg-4 col-xs-0 col-sm-4 col-md-4">
                <!-- Disatel TMT -->
-               <img class="soluciones img-responsive" src="img/assets/disatel-tmt.png" alt="Disatel TMT"/><br>
+               <a href="index.html#TMT"><img class="soluciones img-responsive" src="img/assets/disatel-tmt.png" alt="Disatel TMT"/></a><br>
                <!-- Disatel Wifi -->
-               <img class="soluciones img-responsive" src="img/assets/disatel-wifi.png" alt="Disatel Wifi"/><br>
+               <a href="index.html#WIFI"><img class="soluciones img-responsive" src="img/assets/disatel-wifi.png" alt="Disatel Wifi"/></a><br>
                <!-- Disatel Móvil -->
-               <img class="soluciones img-responsive" src="img/assets/disatel-movil.png" alt="Disatel Movil"/>
+               <a href="index.html#MOVIL"><img class="soluciones img-responsive" src="img/assets/disatel-movil.png" alt="Disatel Movil"/></a>
              </div>
 
              <div class="col-lg-4 col-xs-0 col-sm-4 col-md-4">
                <!-- Disatel Lock -->
-               <img class="soluciones img-responsive" src="img/assets/disatel-lock.png" alt="Disatel Lock"/><br>
+               <a href="index.html#LOCK"><img class="soluciones img-responsive" src="img/assets/disatel-lock.png" alt="Disatel Lock"/></a><br>
                <!-- Disatel SAT -->
-               <img class="soluciones img-responsive" src="img/assets/disatel-sat.png" alt="Disatel SAT"/>
+               <a href="index.html#SAT"><img class="soluciones img-responsive" src="img/assets/disatel-sat.png" alt="Disatel SAT"/></a>
              </div>
            </div>
          </div>
        </div>
+
 
        <!-- Rectangulo Blanco 2 -->
        <div class="row recBlanco2" style="background-color:#EEE;">
@@ -259,13 +261,11 @@
 
 
        <!-- Soluciones Titulo-->
-
        <div class="row nuestrasSolucionesTitulo">
           <div class="col-lg-12 col-xs-12 col-sm-12 col-md-12">
             <strong><h1 class="titulo tituloNS">NUESTRAS <span>SOLUCIONES</span></h1></strong><hr class="division2"><br><br>
           </div>
        </div>
-
 
        <!-- Nuestras Soluciones - Descripciones - GPS -->
        <a name="GPS"></a>
@@ -296,10 +296,9 @@
 
            <!-- Boton -->
            <button class="botonSoluciones">
-             <a href="" style="text-decoration:none;"><p>VER PRODUCTOS</p></a>
+             <a href="soluciones/gps.html" style="text-decoration:none;"><p>VER PRODUCTOS</p></a>
            </button><br>
          </div>
-
        </div>
 
        <!-- Nuestras Soluciones - Descripciones - TMT -->
@@ -330,12 +329,10 @@
 
            <!-- Boton -->
            <button class="botonSoluciones">
-             <a href="" style="text-decoration:none;"><p>VER PRODUCTOS</p></a>
+             <a href="soluciones/telemetria.html" style="text-decoration:none;"><p>VER PRODUCTOS</p></a>
            </button><br>
          </div>
-
        </div>
-
 
        <!-- Nuestras Soluciones - Descripciones - SAT -->
        <a name="SAT"></a>
@@ -365,7 +362,6 @@
          </div>
        </div>
 
-
        <!-- Nuestras Soluciones - Descripciones - VIDEO -->
        <a name="VIDEO"></a>
        <div class="row nuestrasSolucionesDesc VIDEO">
@@ -394,7 +390,6 @@
          </div>
        </div>
 
-
        <!-- Nuestras Soluciones - Descripciones - MÓVIL -->
        <a name="MOVIL"></a>
        <div class="row nuestrasSolucionesDesc MOVIL">
@@ -420,9 +415,13 @@
 
            <!-- Texto -->
            <p class="textoSoluciones">Control de tus unidades de transporte y mercadería desde cualquier dispositivo (celular, tablet o dispositivo móvil).</p><br>
+
+           <!-- Boton -->
+           <button class="botonSoluciones">
+             <a href="soluciones/movil.html" style="text-decoration:none;"><p>VER PRODUCTOS</p></a>
+           </button><br>
          </div>
        </div>
-
 
        <!-- Nuestras Soluciones - Descripciones - LOCK -->
        <a name="LOCK"></a>
@@ -452,11 +451,10 @@
 
            <!-- Boton -->
            <button class="botonSoluciones">
-             <a href="" style="text-decoration:none;"><p>VER PRODUCTOS</p></a>
+             <a href="soluciones/lock.html" style="text-decoration:none;"><p>VER PRODUCTOS</p></a>
            </button><br>
          </div>
        </div>
-
 
        <!-- Nuestras Soluciones - Descripciones - WIFI -->
        <a name="WIFI"></a>
@@ -487,8 +485,8 @@
          </div>
        </div>
 
-       <!-- Contactanos Formulario -->
 
+       <!-- Contactanos Formulario -->
        <div class="row contFormulario">
          <a name="C"></a>
          <strong><h1 class="titulo tituloNS">CONTÁCTANOS</h1></strong><hr class="division2"><br><br>
@@ -496,54 +494,67 @@
            <div class="row">
               <div class="col-lg-6 col-sm-6">
 
+                <!-- Nombre -->
                 <div class="form-row inputNombre">
                         <input type="text" name="nombre" placeholder="Nombre*">
                 </div>
 
+                <!-- Email -->
                 <div class="form-row inputEmail">
                         <input type="email" name="email" placeholder="Email*">
                 </div>
 
+                <!-- Pais -->
                 <div class="form-row inputPais">
                     <input type="text" name="pais" placeholder="Pais">
                 </div>
 
+                <!-- Telefono -->
                 <div class="form-row inputTelefono">
                         <input type="text" name="telefono" placeholder="Teléfono*">
                 </div>
 
+                <!-- Area de Checkbox -->
                 <div class="checkboxList">
                   <span class="spanSoluciones">¿Qué Soluciones le interesan?*</span><hr class="division3">
+
+                  <!-- GPS -->
                   <div class="form-row list">
                           <input class="checkGPS" type="checkbox" name="checkbox">
                           <span class="checkTitulo">DISATEL GPS</span>
                   </div>
 
+                  <!-- MOVIL -->
                   <div class="form-row list">
                           <input class="checkMOVIL" type="checkbox" name="checkbox">
                           <span class="checkTitulo">DISATEL MÓVIL</span><br>
                   </div>
 
+                  <!-- TMT -->
                   <div class="form-row list">
                           <input class="checkTMT" type="checkbox" name="checkbox">
                           <span class="checkTitulo">DISATEL TELEMETRIA</span>
                   </div>
 
+                  <!-- LOCK -->
                   <div class="form-row list">
                           <input class="checkLOCK" type="checkbox" name="checkbox">
                           <span class="checkTitulo">DISATEL LOCK</span><br>
                   </div>
 
+                  <!-- SAT -->
                   <div class="form-row list">
                           <input class="checkSAT" type="checkbox" name="checkbox">
                           <span class="checkTitulo">DISATEL SATELITAL</span>
                   </div>
 
+                  <!-- WIFI -->
                   <div class="form-row list">
                           <input class="checkWIFI" type="checkbox" name="checkbox">
                           <span class="checkTitulo">DISATEL WIFI</span><br>
                   </div>
 
+                  <!-- VIDEO -->
                   <div class="form-row list">
                           <input class="checkVIDEO" type="checkbox" name="checkbox">
                           <span class="checkTitulo">DISATEL VIDEO</span>
@@ -552,6 +563,8 @@
               </div>
 
               <div class="col-lg-6 col-sm-6">
+
+                <!-- Contenido -->
                 <div class="form-row">
                         <textarea class="textDesc" name="textarea" placeholder="Solución en la que estas interesado*"></textarea>
                 </div>
@@ -578,8 +591,8 @@
          <title>corners-2</title>
          <polygon class="st1" points="1259.4,0 640.2,122.9 0,0 0,134.9 1259.4,134.9 "/>
          </svg>
-         <div class="col-lg-2 col-sm-2 col-md-2"></div>
-         <div class="col-lg-4 col-sm-4 col-md-4 bloqueCont1">
+         <div class="col-lg-2 col-md-2"></div>
+         <div class="col-lg-4 col-md-4 bloqueCont1">
 
            <!-- México -->
            <div class="contMX">
@@ -616,7 +629,7 @@
            </div>
 
          </div>
-         <div class="col-lg-4 col-sm-4 col-md-4 bloqueCont2">
+         <div class="col-lg-4 col-md-4 bloqueCont2">
 
            <!-- Guatemala -->
            <div class="contGT">
@@ -643,8 +656,9 @@
            </div>
 
          </div>
-         <div class="col-lg-2 col-sm-2 col-md-2"></div>
+         <div class="col-lg-2 col-md-2"></div>
        </div>
+
 
        <!-- Footer - Logo Disatel -->
        <div class="row">
@@ -685,15 +699,12 @@
   <!-- Boostrap Framework -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-
-    <!-- Script to Activate the Carousel -->
+    <!-- Script que activa el Carousel -->
     <script>
     $('.carousel').carousel({
-        interval: 5000 //changes the speed
+        interval: 5000 //Velocidad de cambio
     })
     </script>
 
-
-
-
-</body></html>
+</body>
+</html>

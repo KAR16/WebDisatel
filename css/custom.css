@@ -1,0 +1,50 @@
+.banner {
+  width: 100%;
+  margin-bottom: 50px; }
+  .banner .banner-img {
+    display: block;
+    width: 100%;
+    height: auto; }
+
+.service-title {
+  display: block;
+  width: 80%;
+  max-width: 220px;
+  margin: auto;
+  margin-bottom: 20px; }
+
+.description {
+  padding: 20px;
+  width: 80%;
+  margin: auto;
+  margin-bottom: 40px; }
+  .description.short {
+    text-align: center; }
+
+.subservices-wrapper {
+  padding: 40px 10%;
+  background-color: #eee; }
+  .subservices-wrapper .subtitle {
+    font-weight: bold;
+    text-transform: capitalize;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #E01F26; }
+  .subservices-wrapper .subservice-box {
+    padding: 20px; }
+    .subservices-wrapper .subservice-box h4 {
+      font-weight: bold; }
+  .subservices-wrapper .sub-img {
+    display: block;
+    margin: auto;
+    width: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px; }
+
+.st1 {
+  fill: #eee !important; }
+
+footer {
+  margin: 0; }
+
+/*# sourceMappingURL=custom.css.map */
