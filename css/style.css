@@ -39,7 +39,7 @@ footer {
 }
 
 .navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form{
-  border-color: #FFF;
+  border-color: #E01F26 !important;
 }
 
 /* Color de la fuente del Menu*/
@@ -48,11 +48,15 @@ footer {
 }
 
 .navbar-toggle{
-  background-color: #610B0B !important;
+  background-color: #E01F26 !important;
 }
 
 .navbar-inverse .navbar-toggle{
-  border-color: white !important;
+  border-color: #E01F26 !important;
+}
+
+.navbar-inverse .navbar-toggle{
+  border-color: none !important;
 }
 
 /* Media Query - Min 768px*/
