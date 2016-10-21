@@ -682,6 +682,11 @@ textarea::-moz-placeholder{
       display: none;
     }
 
+    /* Nuestras Soluciones */
+    .nuestrasSolucionesDesc{
+      padding-bottom: 5%;
+    }
+
     /* Titulo Soluciones */
     .tituloSoluciones{
       margin-left: 1%;
