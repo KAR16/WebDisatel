@@ -66,23 +66,34 @@ footer {
     padding-left: 5%;
     margin-right: -20%;
   }
-  /*margin-left: 25%;
-  margin-right: -30%;
-  */
+
+  .navbar-nav>li>a{
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+  }
 
   .navbar-nav {
     float: left;
     padding-bottom: 30px;
     margin-top: -15px !important;
     margin-left: 100px;
+    padding-right: 10%;
+  }
+
+  .navbar-nav ul li a{
+    display: inline-block;
   }
 
   /* Bordes del Menú*/
   li.border {
     float: left;
     margin-right: 0px;
-    border-right: 3px solid #FFF;
-    padding: 0 20px;
+    border-right: 2px solid #FFF;
+    padding: 10px;
+  }
+  /* Bordes del Menú*/
+  li.ultimo {
+    border-right: none;
   }
 
   .navbar .navbar-inverse{
@@ -159,15 +170,20 @@ footer {
 
   /* CheckList */
   .checkMOVIL{
-    margin-left: 25% !important;
+    margin-left: 24% !important;
   }
 
   .checkLOCK{
-    margin-left: 13% !important;
+    margin-left: 12.3% !important;
   }
 
   .checkWIFI{
-    margin-left: 16% !important;
+    margin-left: 15.3% !important;
+  }
+
+  /* Contenedor del Formulario*/
+  .formulario{
+    background: -webkit-linear-gradient(0deg, #FFF, #EEE, #CCCCCE);
   }
 
 }
@@ -448,7 +464,6 @@ footer {
 /**************** Parte 9  - Contactanos Formularios ****************/
 /* Contenedor del Formulario*/
 .formulario{
-  background: -webkit-linear-gradient(0deg, #FFF, #EEE, #CCCCCE);
   margin-bottom: 10%;
 }
 
