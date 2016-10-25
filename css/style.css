@@ -19,7 +19,7 @@ body {
 .fill {
     width: 100%;
     height: 100%;
-    background-position: center;
+    background-position: top;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -80,8 +80,8 @@ footer {
     padding-right: 10%;
   }
 
-  .navbar-nav ul li a{
-    display: inline-block;
+  .nav li{
+    display: inline-block !important;
   }
 
   /* Bordes del Menú*/
@@ -117,7 +117,7 @@ footer {
   }
 
   .GPS .botonSoluciones{
-    margin-top: 27% !important;
+    margin-top: 5% !important;
   }
 
   /* Nuestras Soluciones - TMT */
@@ -126,7 +126,7 @@ footer {
   }
 
   .TMT .botonSoluciones{
-    margin-top: 20.3% !important;
+    margin-top: 5% !important;
   }
 
   /* Nuestras Soluciones - SAT */
@@ -145,7 +145,7 @@ footer {
   }
 
   .MOVIL .botonSoluciones{
-    margin-top: 27.7% !important;
+    margin-top: 5% !important;
   }
 
   /* Nuestras Soluciones - LOCK */
@@ -154,7 +154,7 @@ footer {
   }
 
   .LOCK .botonSoluciones{
-    margin-top: 31% !important;
+    margin-top: 5% !important;
   }
 
   /* Nuestras Soluciones - WIFI */
@@ -674,7 +674,7 @@ textarea::-moz-placeholder{
   }
 
   .mexico{
-    margin-top: 55%
+    margin-top: 0% !important;
   }
 
   /* Flechas de Nuestras Secciones */
