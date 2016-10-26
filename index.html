@@ -15,6 +15,9 @@
     <!-- Custom CSS -->
     <link href="css/style.css" rel="stylesheet">
 
+    <!-- Sweet Alert -->
+    <link href="css/sweetalert2.min.css" rel="stylesheet">
+
     <!-- Google Fonts - Lato -->
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 
@@ -38,12 +41,12 @@
           <!-- Menu del Navbar -->
           <div class="navbar-collapse collapse" id="bs-example-navbar-collapse-1" aria-expanded="false" style="height: 1px;">
               <ul class="nav navbar-nav">
-                <li class="border"><a href="#"><b>INICIO</b></a></li>
-                <li class="border"><a href="index.html#MV"><b>MISIÓN Y VISIÓN</b></a></li>
-                <li class="border"><a href="index.html#QS"><b>QUIÉNES SOMOS</b></a></li>
-                <li class="border"><a href="index.html#NS"><b>NUESTRAS SOLUCIONES</b></a></li>
-                <li class="border"><a href="index.html#C"><b>CONTÁCTANOS</b></a></li>
-                <li><a href="#"><b>ACCESO USUARIOS</b></a></li>
+                <li class="border"><a href="#">INICIO</a></li>
+                <li class="border"><a href="index.html#MV">MISIÓN Y VISIÓN</a></li>
+                <li class="border"><a href="index.html#QS">QUIÉNES SOMOS</a></li>
+                <li class="border"><a href="index.html#NS">NUESTRAS SOLUCIONES</a></li>
+                <li class="border"><a href="index.html#C">CONTÁCTANOS</a></li>
+                <li class="border ultimo"><a href="#">ACCESO USUARIOS</a></li>
               </ul>
           </div>
           <!-- /.navbar-collapse -->
@@ -493,71 +496,72 @@
          <strong><h1 class="titulo tituloNS">CONTÁCTANOS</h1></strong><hr class="division2"><br><br>
          <div class="container formulario">
            <div class="row">
+             <form>
               <div class="col-lg-6 col-sm-6">
 
                 <!-- Nombre -->
                 <div class="form-row inputNombre">
-                        <input type="text" name="nombre" placeholder="Nombre*">
+                        <input id="nombreInput" type="text" name="nombre" placeholder="Nombre*" onkeypress='return event.charCode >= 65 && event.charCode <= 90 || event.charCode >= 97 && event.charCode <= 122 || event.charCode == 32'>
                 </div>
 
                 <!-- Email -->
                 <div class="form-row inputEmail">
-                        <input type="email" name="email" placeholder="Email*">
+                        <input id="emailInput" type="email" name="email" placeholder="Email*">
                 </div>
 
                 <!-- Pais -->
                 <div class="form-row inputPais">
-                    <input type="text" name="pais" placeholder="Pais">
+                    <input id="paisInput" type="text" name="pais" placeholder="Pais*">
                 </div>
 
                 <!-- Telefono -->
                 <div class="form-row inputTelefono">
-                        <input type="text" name="telefono" placeholder="Teléfono*">
+                        <input id="telefonoInput" type="text" name="telefono" placeholder="Teléfono*" onkeypress='return event.charCode >= 48 && event.charCode <= 57'>
                 </div>
 
                 <!-- Area de Checkbox -->
-                <div class="checkboxList">
+                <div id="checkLista" class="checkboxList">
                   <span class="spanSoluciones">¿Qué Soluciones le interesan?*</span><hr class="division3">
 
                   <!-- GPS -->
                   <div class="form-row list">
-                          <input class="checkGPS" type="checkbox" name="checkbox">
+                          <input id="check1" class="checkGPS" type="checkbox" value="GPS" name="checkbox">
                           <span class="checkTitulo">DISATEL GPS</span>
                   </div>
 
                   <!-- MOVIL -->
                   <div class="form-row list">
-                          <input class="checkMOVIL" type="checkbox" name="checkbox">
+                          <input id="check5" class="checkMOVIL" type="checkbox" value="MÓVIL" name="checkbox">
                           <span class="checkTitulo">DISATEL MÓVIL</span><br>
                   </div>
 
                   <!-- TMT -->
                   <div class="form-row list">
-                          <input class="checkTMT" type="checkbox" name="checkbox">
+                          <input id="check2" class="checkTMT" type="checkbox" value="TELEMETRIA" name="checkbox">
                           <span class="checkTitulo">DISATEL TELEMETRIA</span>
                   </div>
 
                   <!-- LOCK -->
                   <div class="form-row list">
-                          <input class="checkLOCK" type="checkbox" name="checkbox">
+                          <input id="check6" class="checkLOCK" type="checkbox" value="LOCK" name="checkbox">
                           <span class="checkTitulo">DISATEL LOCK</span><br>
                   </div>
 
                   <!-- SAT -->
                   <div class="form-row list">
-                          <input class="checkSAT" type="checkbox" name="checkbox">
+                          <input id="check3" class="checkSAT" type="checkbox" value="SATELITAL" name="checkbox">
                           <span class="checkTitulo">DISATEL SATELITAL</span>
                   </div>
 
                   <!-- WIFI -->
                   <div class="form-row list">
-                          <input class="checkWIFI" type="checkbox" name="checkbox">
+                          <input id="check7" class="checkWIFI" type="checkbox" value="WIFI" name="checkbox">
                           <span class="checkTitulo">DISATEL WIFI</span><br>
                   </div>
 
                   <!-- VIDEO -->
                   <div class="form-row list">
-                          <input class="checkVIDEO" type="checkbox" name="checkbox">
+                          <input id="check4" class="checkVIDEO" type="checkbox" value="VIDEO" name="checkbox">
                           <span class="checkTitulo">DISATEL VIDEO</span>
                   </div>
               </div>
@@ -567,14 +571,14 @@
 
                 <!-- Contenido -->
                 <div class="form-row">
-                        <textarea class="textDesc" name="textarea" placeholder="Solución en la que estas interesado*"></textarea>
+                        <textarea class="textDesc" id="mensajeText" name="textarea" placeholder="Solución en la que estas interesado*"></textarea>
                 </div>
 
                 <!-- Boton -->
-                <button class="botonSoluciones enviar">
-                  <a href="" style="text-decoration:none;"><p>ENVIAR</p></a>
-                </button><br>
+                <input class="botonSoluciones enviar" type="button" value="ENVIAR"/><br>
+
               </div>
+            </form>
              </div>
            </div>
        </div>
@@ -699,6 +703,16 @@
 
   <!-- Boostrap Framework -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <!-- Amazone Web Service Framework -->
+  <script src="https://sdk.amazonaws.com/js/aws-sdk-2.6.12.min.js"></script>
+
+  <!-- Sweet Alert -->
+  <script src="js/sweetalert2.js"></script>
+
+
+  <!-- Archivo JS -->
+  <script src="js/script.js"></script>
 
     <!-- Script que activa el Carousel -->
     <script>
