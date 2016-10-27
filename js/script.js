@@ -80,15 +80,20 @@ function enviarMail(solucionesDisatel){
    else     console.log(data, params);   // successful response
 
    //Alerta de E-mail enviado con éxito
-   swal(
-     'Excelente!',
-     'Formulario enviado éxitosamente!',
-     'success'
-     )
+   alerta("¡Excelente!", "Formulario enviado éxitosamente", "success");
 
    //Limpiamos los Campos del Formulario
    limpiarCampos();
   });
+}
+
+//Funcion Sweet Alert
+function alerta(titulo, texto, estado){
+  swal(
+    titulo,
+    texto,
+    estado
+    )
 }
 
 //Validacion de Checkbox
@@ -113,11 +118,8 @@ function validarCheckbox(){
   }
   else{
     document.getElementById("checkLista").style.borderColor="blue";
-    swal(
-      'Alerta!',
-      'Seleccione una solucion como minimo!',
-      'warning'
-      )
+    alerta("¡Alerta!", "Seleccione una opción como mínimo", "warning");
+
   }
   // validarInputs();
 }
@@ -129,47 +131,27 @@ function validarInputs(){
   //Validando Nombre
   if ($('#nombreInput').val() === ''){
     document.getElementById("nombreInput").style.borderColor="blue";
-    swal(
-      'Alerta!',
-      'Error en campo nombre!',
-      'warning'
-      )
+    alerta("¡Alerta!", "Error en campo nombre", "warning");
   }
   //Validando Email
   else if ($('#emailInput').val() === '' || !regexp.test($("#emailInput").val())){
     document.getElementById("emailInput").style.borderColor="blue";
-    swal(
-      'Alerta!',
-      'Error en campo email!',
-      'warning'
-      )
+    alerta("¡Alerta!", "Error en campo email", "warning");
   }
   //Validando Pais
   else if ($('#paisInput').val() === ''){
     document.getElementById("paisInput").style.borderColor="blue";
-    swal(
-      'Alerta!',
-      'Error en campo pais!',
-      'warning'
-      )
+    alerta("¡Alerta!", "Error en campo pais", "warning");
   }
   //Validando Telefono
-  else if ($('#telefonoInput').val() === ''){
+  else if ($('#telefonoInput').val() === '' || $('#telefonoInput').val().length <= 6){
     document.getElementById("telefonoInput").style.borderColor="blue";
-    swal(
-      'Alerta!',
-      'Error en campo telefono!',
-      'warning'
-      )
+    alerta("¡Alerta!", "Error en campo telefono", "warning");
   }
   //Validando Mensaje
   else if ($('#mensajeText').val() === ''){
     document.getElementById("mensajeText").style.borderColor="blue";
-    swal(
-      'Alerta!',
-      'Error en campo mensaje!',
-      'warning'
-      )
+    alerta("¡Alerta!", "Error en campo mensaje", "warning");
   }
   else{
     validarCheckbox();
