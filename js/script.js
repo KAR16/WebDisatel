@@ -27,15 +27,13 @@ function enviarMail(solucionesDisatel){
   var pais = $('#paisInput').val();
   var telefono = $('#telefonoInput').val();
   var mensaje = $('#mensajeText').val();
-  var contenido = "";
-  var ruta = "http://cliente.quieroaplicar.com/uploads/logodisateltransparente.png";
 
   //Aqui se guardaran las soluciones de Disatel ordenadas
   var detalleSoluciones = "";
 
   //Descomponemos las Soluciones para la vista
   for (var item = 0; item < solucionesDisatel.length; item++){
-    detalleSoluciones+= solucionesDisatel[item] + "<br>";
+    detalleSoluciones+= solucionesDisatel[item] + "\n";
   }
 
 
@@ -47,45 +45,6 @@ function enviarMail(solucionesDisatel){
     region: 'us-west-2'
   });
 
-  //Variable contenido - Cuerpo del mensaje html
-  contenido = '<html>'+
-              '<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">'+
-              '<body style="font-family: Lato;background-color:#EEE">'+
-                 '<div>'+
-                 '<div class="contenido" style="padding-left:20%;padding-right:20%;padding-top:5%;font-family: Lato;">'+
-                   '<div style="height: 60px; background-color: #E01F26"><h1 style="font-weight: 800;text-align: center;color:#FFF;font-size: 1.8em;">FORMULARIO</h1><hr style="width: 10%;height: 5px;background-color: #FFF;border-top: none !important;"><br><br></div>'+
-                   '<div style="margin-top:5%;">'+
-                      '<strong><p style="font-size: 1.8em;text-align: left;color: #e01f26;">CLIENTE: </p></strong>'+
-                      '<p style="font-size: 1.8em;text-align: left;color: #595A5C;"> '+ nombre +'</p>'+
-                   '</div>'+
-                   '<div style="margin-top:5%;">'+
-                      '<strong><p style="font-size: 1.8em;text-align: left;color: #e01f26;">E-MAIL: </p></strong>'+
-                      '<p style="font-size: 1.8em;text-align: left;color: #595A5C;"> '+ email +'</p>'+
-                   '</div>'+
-                   '<div style="margin-top:5%;">'+
-                      '<strong><p style="font-size: 1.8em;text-align: left;color: #e01f26;">TELÉFONO: </p></strong>'+
-                      '<p style="font-size: 1.8em;text-align: left;color: #595A5C;"> '+ telefono +'</p>'+
-                   '</div>'+
-                   '<div style="margin-top:5%;">'+
-                      '<strong><p style="font-size: 1.8em;text-align: left;color: #e01f26;">PAIS: </p></strong>'+
-                      '<p style="font-size: 1.8em;text-align: left;color: #595A5C;"> '+ pais +'</p>'+
-                   '</div>'+
-                   '<div style="margin-top:5%;">'+
-                       '<strong><p style="font-size: 1.8em;text-align: left;color: #e01f26;">INTERESES: </p></strong>'+
-                       '<p style="font-size: 1.8em;text-align: left;color: #595A5C;">'+ detalleSoluciones +'</p>'+
-                   '</div>'+
-                   '<div style="margin-top:5%;">'+
-                      '<strong><p style="font-size: 1.8em;text-align: left;color: #e01f26;">MENSAJE: </p></strong>'+
-                      '<p style="font-size: 1.8em;text-align: left;color: #595A5C;"> '+ mensaje +'</p>'+
-                   '</div>'+
-                   '<div style="display:flex;margin-top:5%;padding-top: 3%;padding-bottom: 10%;">'+
-                     '<img class="disatelLogo" style="height:100px;width:200px;align-items: center; margin: auto;" src="'+ ruta +'" alt="Disatel Logo"/><br>'+
-                   '</div>'+
-                 '</div>'+
-
-               '</body>'+
-               '</html>'
-
   //Parametros a enviar
   var params = {
    Destination: {
@@ -94,10 +53,16 @@ function enviarMail(solucionesDisatel){
      ]
    },
    Message: { /* Mensaje */
-     Body: { /* required */
-     Html: {
-       Data: contenido
-     }
+     Body: { /* Cuerpo del Mensaje */
+       Text: {
+        Data: "Datos del Cliente: \n"+
+              "Nombre: " + nombre + "\n"+
+              "Email: "+ email +"\n"+
+              "Pais: "+ pais +"\n"+
+              "Telefono: "+ telefono +"\n"+
+              "Soluciones en las que esta interesado:"+"\n"+ detalleSoluciones +
+              "Mensaje: " + mensaje, /* required */
+      }
      },
      Subject: { /* required */
        Data: 'Formulario Disatel', /* Asunto */
@@ -218,7 +183,6 @@ $(".INICIO").click(function(){
         $(".navbar-collapse").attr('aria-expanded', false);
         $(".navbar-collapse").attr('style', 'height: 1px');
         $(".navbar-collapse").addClass("collapse");
-        // $("#NS").remove();
 
         //Boton Navbar-Toogle
         $(".navbar-toggle").addClass("collapsed");
@@ -234,7 +198,6 @@ $(".MV").click(function(){
         $(".navbar-collapse").attr('aria-expanded', false);
         $(".navbar-collapse").attr('style', 'height: 1px');
         $(".navbar-collapse").addClass("collapse");
-        // $("#NS").remove();
 
         //Boton Navbar-Toogle
         $(".navbar-toggle").addClass("collapsed");
@@ -250,7 +213,6 @@ $(".QS").click(function(){
         $(".navbar-collapse").attr('aria-expanded', false);
         $(".navbar-collapse").attr('style', 'height: 1px');
         $(".navbar-collapse").addClass("collapse");
-        // $("#NS").remove();
 
         //Boton Navbar-Toogle
         $(".navbar-toggle").addClass("collapsed");
@@ -311,15 +273,3 @@ $(".AU").click(function(){
         $(".navbar-toggle").attr('aria-expanded', false);
     }
 });
-
-
-// $(document).ready(function() {
-//   if ((screen.width>=768)) {
-//     $("#NS").remove();
-//     $('.rec1').prepend('<a id="NS"></a>');
-//   }
-//   else if (screen.width<=767){
-//     $("#NS").remove();
-//     $('.rec1').append('<a id="NS"></a>');
-//   }
-// });
