@@ -172,3 +172,119 @@ $( ".enviar" ).click(function() {
   //Nos dirijimos a la funcion Validar
   validarInputs();
 });
+
+
+//Ocultar el Menú en Móvil
+//Inicio
+$(".INICIO").click(function(){
+    if ($(".navbar-collapse").hasClass('in')){
+        //Navbar-Collapse
+        $(".navbar-collapse").removeClass("collapse in");
+        $(".navbar-collapse").attr('aria-expanded', false);
+        $(".navbar-collapse").attr('style', 'height: 1px');
+        $(".navbar-collapse").addClass("collapse");
+        // $("#NS").remove();
+
+        //Boton Navbar-Toogle
+        $(".navbar-toggle").addClass("collapsed");
+        $(".navbar-toggle").attr('aria-expanded', false);
+    }
+});
+
+//Misión y Visión
+$(".MV").click(function(){
+    if ($(".navbar-collapse").hasClass('in')){
+        //Navbar-Collapse
+        $(".navbar-collapse").removeClass("collapse in");
+        $(".navbar-collapse").attr('aria-expanded', false);
+        $(".navbar-collapse").attr('style', 'height: 1px');
+        $(".navbar-collapse").addClass("collapse");
+        // $("#NS").remove();
+
+        //Boton Navbar-Toogle
+        $(".navbar-toggle").addClass("collapsed");
+        $(".navbar-toggle").attr('aria-expanded', false);
+    }
+});
+
+//Quiénes Somos
+$(".QS").click(function(){
+    if ($(".navbar-collapse").hasClass('in')){
+        //Navbar-Collapse
+        $(".navbar-collapse").removeClass("collapse in");
+        $(".navbar-collapse").attr('aria-expanded', false);
+        $(".navbar-collapse").attr('style', 'height: 1px');
+        $(".navbar-collapse").addClass("collapse");
+        // $("#NS").remove();
+
+        //Boton Navbar-Toogle
+        $(".navbar-toggle").addClass("collapsed");
+        $(".navbar-toggle").attr('aria-expanded', false);
+    }
+});
+
+//Nuestras Soluciones
+$(".NS").click(function(){
+    if ($(".navbar-collapse").hasClass('in')){
+        //Navbar-Collapse
+        $(".navbar-collapse").removeClass("collapse in");
+        $(".navbar-collapse").attr('aria-expanded', false);
+        $(".navbar-collapse").attr('style', 'height: 1px');
+        $(".navbar-collapse").addClass("collapse");
+
+        //Boton Navbar-Toogle
+        $(".navbar-toggle").addClass("collapsed");
+        $(".navbar-toggle").attr('aria-expanded', false);
+    }
+
+    if ((screen.width>=767)) {
+      $("#NS").remove();
+      $('.AnclaNS').append('<a id="NS"></a>');
+    }
+    else if (screen.width<=767){
+      $("#NS").remove();
+      $('.rec1').append('<a id="NS"></a>');
+    }
+});
+
+//Contáctanos
+$(".CONT").click(function(){
+    if ($(".navbar-collapse").hasClass('in')){
+        //Navbar-Collapse
+        $(".navbar-collapse").removeClass("collapse in");
+        $(".navbar-collapse").attr('aria-expanded', false);
+        $(".navbar-collapse").attr('style', 'height: 1px');
+        $(".navbar-collapse").addClass("collapse");
+
+        //Boton Navbar-Toogle
+        $(".navbar-toggle").addClass("collapsed");
+        $(".navbar-toggle").attr('aria-expanded', false);
+    }
+});
+
+//Acceso Usuarios
+$(".AU").click(function(){
+    if ($(".navbar-collapse").hasClass('in')){
+        //Navbar-Collapse
+        $(".navbar-collapse").removeClass("collapse in");
+        $(".navbar-collapse").attr('aria-expanded', false);
+        $(".navbar-collapse").attr('style', 'height: 1px');
+        $(".navbar-collapse").addClass("collapse");
+
+        //Boton Navbar-Toogle
+        $(".navbar-toggle").addClass("collapsed");
+        $(".navbar-toggle").attr('aria-expanded', false);
+    }
+});
+
+
+// $(document).ready(function() {
+//   if ((screen.width>=768)) {
+//     $("#NS").remove();
+//     $('.rec1').prepend('<a id="NS"></a>');
+//   }
+//   else if (screen.width<=767){
+//     $("#NS").remove();
+//     $('.rec1').append('<a id="NS"></a>');
+//   }
+// });
