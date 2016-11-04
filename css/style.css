@@ -109,6 +109,9 @@ footer {
   /*Quienes Somos */
   .quienesSomos{
     background: url('../img/backgrounds/Artboard1.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top left;
   }
 
   /* Nuestras Soluciones - GPS */
@@ -417,19 +420,14 @@ footer {
 .botonSoluciones{
   width: 250px;
   height: 50px;
+  font-size: 1.5em;
+  color: #FFF;
   background-color: #E01F26;
   border: 2px solid #E01F26;
   margin-top: 24% !important;
 
 }
 
-/*Boton Soluciones Texto*/
-.botonSoluciones p{
-  font-size: 1.5em;
-  text-align: center;
-  color: #FFF;
-  margin-top: 7px;
-}
 
 /* Linea Division - Servicios hr */
 .divisionSoluciones{
@@ -608,7 +606,7 @@ textarea::-moz-placeholder{
   margin-top: 5%;
   text-align: left;
   color: #E01F26;
-  font-size: 2em !important;
+  font-size: 1.7em !important;
 }
 
 /* Bloque de Contactos 1 */

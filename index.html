@@ -67,7 +67,7 @@
       <div class="carousel-inner">
           <div class="item">
               <!-- Imagen 1 -->
-              <div class="fill" style="background-image:url(img/caratula/b1.jpg);">
+              <div class="fill" style="background-image:url(img/caratula/b1.jpg);background-blend-mode:multiply;background-color:#E11B22;">
                 <img class="logo-slide" src="img/assets/logo-big.png" alt="">
                 <img class="world" src="img/assets/world.png" alt="">
               </div>
@@ -79,7 +79,7 @@
           </div>
           <div class="item active">
               <!-- Imagen 3 -->
-              <div class="fill" style="background-image:url(img/caratula/b3.jpg);"></div>
+              <div class="fill" style="background-image:url(img/caratula/ciudad.jpg);"></div>
           </div>
       </div>
 
@@ -299,9 +299,11 @@
            <p class="textoSoluciones">Tecnología de localización y rastreo, desde cualquier dispositivo, de  unidades móviles de todo tipo a través de equipos GPS convencionales e híbridos.</p><br>
 
            <!-- Boton -->
-           <button class="botonSoluciones">
-             <a href="soluciones/gps.html" style="text-decoration:none;"><p>VER PRODUCTOS</p></a>
-           </button><br>
+           <a href="soluciones/gps.html" style="text-decoration:none;">
+             <input class="botonSoluciones" type="button" value="VER PRODUCTOS"/><br>
+           </a>
+
+           <br>
          </div>
        </div>
 
@@ -318,7 +320,7 @@
              <g id="Layer_3" data-name="Layer 3"><g id="Layer_1-2" data-name="Layer 1"><polygon class="cls-3" points="103.14 0 129.14 27.99 103.02 56.51 130.51 56.51 156.72 27.91 130.81 0 103.14 0"/><polygon class="cls-3" points="51.63 0 77.63 27.99 51.51 56.51 79 56.51 105.21 27.91 79.3 0 51.63 0"/><polygon class="cls-3" points="0.12 0 26.12 27.99 0 56.51 27.49 56.51 53.7 27.91 27.79 0 0.12 0"/></g></g></svg>
 
              <!-- Imagen  -->
-             <img class="solucionesImg img-responsive" src="img/telemetria/t1.png" alt="Imagen TMT"/><br>
+             <img class="solucionesImg img-responsive" src="img/telemetria/t6.jpg" alt="Imagen TMT"/><br>
           </div>
           <div class="col-lg-6 col-sm-6 col-md-6">
 
@@ -332,9 +334,9 @@
            <p class="textoSoluciones">Medición y control para hacer tu negocio eficiente.  Transformamos tus unidades en vehículos inteligentes gracias a nuestro sistema de telemetría de condiciones mecánicas de unidades móviles y perfil de manejo de los pilotos para mejorar el cuidado y eficiencia de los vehículos.</p><br>
 
            <!-- Boton -->
-           <button class="botonSoluciones">
-             <a href="soluciones/telemetria.html" style="text-decoration:none;"><p>VER PRODUCTOS</p></a>
-           </button><br>
+           <a href="soluciones/telemetria.html" style="text-decoration:none;">
+             <input class="botonSoluciones" type="button" value="VER PRODUCTOS"/><br>
+           </a>
          </div>
        </div>
 
@@ -421,9 +423,9 @@
            <p class="textoSoluciones">Control de tus unidades de transporte y mercadería desde cualquier dispositivo (celular, tablet o dispositivo móvil).</p><br>
 
            <!-- Boton -->
-           <button class="botonSoluciones">
-             <a href="soluciones/movil.html" style="text-decoration:none;"><p>VER PRODUCTOS</p></a>
-           </button><br>
+           <a href="soluciones/movil.html" style="text-decoration:none;">
+             <input class="botonSoluciones" type="button" value="VER PRODUCTOS"/><br>
+           </a>
          </div>
        </div>
 
@@ -454,9 +456,9 @@
            <p class="textoSoluciones">Soluciones de control para puertas, persianas metálicas y mercadería en movimiento.</p><br>
 
            <!-- Boton -->
-           <button class="botonSoluciones">
-             <a href="soluciones/lock.html" style="text-decoration:none;"><p>VER PRODUCTOS</p></a>
-           </button><br>
+           <a href="soluciones/lock.html" style="text-decoration:none;">
+             <input class="botonSoluciones" type="button" value="VER PRODUCTOS"/><br>
+           </a>
          </div>
        </div>
 
@@ -511,7 +513,7 @@
 
                 <!-- Pais -->
                 <div class="form-row inputPais">
-                    <input id="paisInput" type="text" name="pais" placeholder="Pais*" onkeypress='return event.charCode >= 65 && event.charCode <= 90 || event.charCode >= 97 && event.charCode <= 122 || event.charCode == 32 || event.charCode == 225 || event.charCode == 233 || event.charCode == 237 || event.charCode == 243 || event.charCode == 250 || event.charCode == 193 || event.charCode == 201 || event.charCode == 205 || event.charCode == 211 || event.charCode == 218 || event.charCode == 241 || event.charCode == 209'>
+                    <input id="paisInput" type="text" name="pais" placeholder="País*" onkeypress='return event.charCode >= 65 && event.charCode <= 90 || event.charCode >= 97 && event.charCode <= 122 || event.charCode == 32 || event.charCode == 225 || event.charCode == 233 || event.charCode == 237 || event.charCode == 243 || event.charCode == 250 || event.charCode == 193 || event.charCode == 201 || event.charCode == 205 || event.charCode == 211 || event.charCode == 218 || event.charCode == 241 || event.charCode == 209'>
                 </div>
 
                 <!-- Telefono -->
@@ -521,7 +523,7 @@
 
                 <!-- Area de Checkbox -->
                 <div id="checkLista" class="checkboxList">
-                  <span class="spanSoluciones">¿Qué Soluciones le interesan?*</span><hr class="division3">
+                  <span class="spanSoluciones">¿Qué Soluciones te interesan?*</span><hr class="division3">
 
                   <!-- GPS -->
                   <div class="form-row list">
@@ -538,7 +540,7 @@
                   <!-- TMT -->
                   <div class="form-row list">
                           <input id="check2" class="checkTMT" type="checkbox" value="TELEMETRIA" name="checkbox">
-                          <span class="checkTitulo">DISATEL TELEMETRIA</span>
+                          <span class="checkTitulo">DISATEL TELEMETRÍA</span>
                   </div>
 
                   <!-- LOCK -->
@@ -571,7 +573,7 @@
 
                 <!-- Contenido -->
                 <div class="form-row">
-                        <textarea class="textDesc" id="mensajeText" name="textarea" placeholder="Solución en la que estas interesado*"></textarea>
+                        <textarea class="textDesc" id="mensajeText" name="textarea" placeholder="Solución en la que estás interesado*"></textarea>
                 </div>
 
                 <!-- Boton -->
@@ -679,7 +681,7 @@
          <polygon class="st1" points="0,0 629.7,105.4 1259.4,0 "/>
          </svg>
           <div class="col-lg-12 col-xs-12 col-sm-12 col-md-12">
-            <img class="disatelLogo img-responsive" src="img/assets/disatel-logo-small.png" alt="Disatel Logo"/><br>
+            <img class="disatelLogo img-responsive" src="img/assets/disatel-logo-small.png" alt="Disatel GPS"/><br>
           </div>
           <!-- 5. Corner Rojo 2 -->
           <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1259.39 143.91">
