@@ -115,54 +115,38 @@ footer {
   }
 
   /* Nuestras Soluciones - GPS */
-  .GPS{
-    background: url('../img/backgrounds/Artboard2.png');
-  }
-
   .GPS .botonSoluciones{
     margin-top: 5% !important;
   }
 
   /* Nuestras Soluciones - TMT */
-  .TMT{
-    background: url('../img/backgrounds/Artboard3.png');
-  }
-
   .TMT .botonSoluciones{
     margin-top: 5% !important;
   }
 
-  /* Nuestras Soluciones - SAT */
-  .SAT{
-    background: url('../img/backgrounds/Artboard2.png');
+  /* Nuestras Soluciones Derecha - TMT / VIDEO / lOCK */
+  .derecha{
+    background: url('../img/backgrounds/Artboard3.png') no-repeat;
+    background-position: right;
+    background-size: auto 100%;
   }
 
-  /* Nuestras Soluciones - VIDEO */
-  .VIDEO{
-    background: url('../img/backgrounds/Artboard3.png');
+  /* Nuestras Soluciones Izquierda - GPS / MOVIL / SAT / WIFI */
+  .izquierda{
+    background: url('../img/backgrounds/Artboard2.png') no-repeat;
+    background-position: left;
+    background-size: auto 100%;
+
   }
 
   /* Nuestras Soluciones - MOVIL */
-  .MOVIL{
-    background: url('../img/backgrounds/Artboard2.png');
-  }
-
   .MOVIL .botonSoluciones{
     margin-top: 5% !important;
   }
 
-  /* Nuestras Soluciones - LOCK */
-  .LOCK{
-    background: url('../img/backgrounds/Artboard3.png');
-  }
-
+/* Nuestras Soluciones - LOCK */
   .LOCK .botonSoluciones{
     margin-top: 5% !important;
-  }
-
-  /* Nuestras Soluciones - WIFI */
-  .WIFI{
-    background: url('../img/backgrounds/Artboard2.png');
   }
 
   /* Nuestras Soluciones */
@@ -177,11 +161,11 @@ footer {
   }
 
   .checkLOCK{
-    margin-left: 12.3% !important;
+    margin-left: 12.4% !important;
   }
 
   .checkWIFI{
-    margin-left: 15.3% !important;
+    margin-left: 15.5% !important;
   }
 
   /* Contenedor del Formulario*/
@@ -208,7 +192,7 @@ footer {
 }
 
 /* Animacion Banner */
-.world{
+/*.world{
     position: absolute;
     display: block;
     top:0;
@@ -220,7 +204,7 @@ footer {
     height: auto;
     max-width: 500px;
     animation: world 6s infinite;
-}
+}*/
 
 .logo-slide{
     position: absolute;
@@ -298,7 +282,7 @@ footer {
 /* Texto */
 .texto{
  font-size: 1.5em;
- text-align: left;
+ text-align: justify;
  color: #595A5C;
 }
 
@@ -314,7 +298,7 @@ footer {
 .division{
   width: 10%;
   height: 5px;
-  background-color: #424143;
+  background-color: #E01F26;
   border-top: none !important;
 }
 
@@ -322,16 +306,19 @@ footer {
 .division2{
   width: 5%;
   height: 5px;
-  background-color: #424143;
+  background-color: #E01F26;
   border-top: none !important;
 }
 
+.margen{
+  padding-left: 4%;
+}
 
 /************ Parte 5 - Quienes Somos ***************/
 
 .quienesSomos{
   background-color: #CCCCCE;
-  margin-top: 1%;
+  margin-top: -10px;
 }
 
 /* Video Disatel */
@@ -411,7 +398,7 @@ footer {
 /* Texto */
 .textoSoluciones{
  font-size: 1.5em;
- text-align: left;
+ text-align: justify;
  color: #595A5C;
  margin-top: -4%;
 }
@@ -604,21 +591,28 @@ textarea::-moz-placeholder{
 .tituloPaises{
   font-weight: 800;
   margin-top: 5%;
-  text-align: left;
+  text-align: center;
   color: #E01F26;
   font-size: 1.7em !important;
 }
 
+/* Texto Paises */
+.textoPaises{
+  text-align: center;
+  font-size: 1.5em;
+  color: #595A5C;
+}
+
 /* Bloque de Contactos 1 */
 .bloqueCont1{
-  padding-left: 10%;
-  padding-right: 10%;
+  padding-left: 15%;
+  padding-right: 5%;
 }
 
 /* Bloque de Contactos 2 */
 .bloqueCont2{
-  padding-left: 10%;
-  padding-right: 10%;
+  padding-left: 15%;
+  padding-right: 5%;
 }
 
 /**************** Parte 11 - Disatel Logo ****************/
@@ -644,7 +638,57 @@ textarea::-moz-placeholder{
   }
 }
 
+@media (max-width: 1200px){
+  .navbar-nav{
+        font-size: 0.8em !important;
+  }
+  .list {
+    margin-bottom: 2%;
+    padding-left: 3%;
+
+    display: block;
+  }
+  .list .checkLOCK{
+    margin-left: 0 !important;
+  }
+
+  .list .checkMOVIL{
+    margin-left: 0 !important;
+  }
+
+  .list .checkWIFI{
+    margin-left: 0 !important;
+  }
+
+  textarea{
+    height: 485px !important;
+  }
+}
+
+@media (max-width: 992px){
+  .navbar-nav{
+    font-size: 0.8em !important;
+    /*padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 15%;
+    margin-right: -20%;
+    margin-left: -35%;*/
+    padding-top: 18%;
+    margin-right: -20%;
+    margin-left: -35%;
+  }
+
+  .logo{
+    margin-left: -18%;
+  }
+}
+
+
 @media (max-width: 768px){
+
+  .logo{
+    margin-left: 0%;
+  }
 
   /* Carrusel */
   .carousel{
@@ -729,13 +773,13 @@ textarea::-moz-placeholder{
 
     /* Bloque de Telefono 1*/
     .bloqueCont1 {
-      padding-left: 30%;
+      padding-left: 35%;
       padding-right: 30%;
     }
 
     /* Bloque de Telefono 2*/
     .bloqueCont2 {
-      padding-left: 30%;
+      padding-left: 35%;
       padding-right: 30%;
     }
 

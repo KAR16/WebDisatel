@@ -70,9 +70,9 @@
       <div class="carousel-inner">
           <div class="item active">
               <!-- Imagen 1 -->
-              <div class="fill" style="background-image:url(img/caratula/b1.jpg);background-blend-mode:multiply;background-color:#E11B22;">
+              <div class="fill" style="background-image:url(img/caratula/b1.jpg);/*background-blend-mode:multiply;background-color:#E11B22;*/">
                 <img class="logo-slide" src="img/assets/logo-big.png" alt="">
-                <img class="world" src="img/assets/world.png" alt="">
+                <!-- <img class="world" src="img/assets/world.png" alt=""> -->
               </div>
           </div>
           <div class="item">
@@ -97,7 +97,7 @@
   </header>
 
     <!-- Contenido de la Pagina -->
-    <div class="container-fluid">
+    <div class="container-fluid full">
 
       <!-- Boton Vamos -->
       <a name="MV"></a>
@@ -123,7 +123,7 @@
       <div class="row misionVision">
          <div class="col-lg-3 col-sm-3 col-md-3"></div>
          <div class="col-lg-6 col-xs-12 col-sm-6 col-md-6">
-             <strong><h1 class="titulo">MISIÓN <span>Y</span> VISIÓN</h1></strong><hr class="division"><br><br>
+             <strong><h1 class="titulo">MISIÓN Y VISIÓN</h1></strong><hr class="division"><br><br>
 
              <!-- Misión -->
              <p class="texto">Misión</p>
@@ -139,9 +139,8 @@
          <div class="col-lg-3 col-sm-3 col-md-3"></div>
        </div>
 
-       <!-- Quienes Somos -->
-       <a name="QS"></a>
-       <div class="row quienesSomos">
+       <div class="row">
+         <div class="col-lg-12"></div>
          <!-- 2. Corner Gris 1 -->
          <svg version="1.1" id="Layer_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1259.4 134.9" style="enable-background:new 0 0 1259.4 134.9;" xml:space="preserve">
          <style type="text/css">
@@ -152,10 +151,15 @@
          <title>corners-2</title>
          <polygon class="st1" points="1259.4,0 640.2,122.9 0,0 0,134.9 1259.4,134.9 "/>
          </svg>
+       </div>
+
+       <!-- Quienes Somos -->
+       <a name="QS"></a>
+       <div class="row quienesSomos">
          <div class="col-lg-3 col-sm-3 col-md-3"></div>
          <div class="col-lg-6 col-xs-12 col-sm-6 col-md-6">
            <!-- Titulo -->
-           <strong><h1 class="titulo">QUIÉNES <span>SOMOS</span></h1></strong><hr class="division"><br><br>
+           <strong><h1 class="titulo">QUIÉNES SOMOS</h1></strong><hr class="division"><br><br>
 
            <!-- Texto  -->
            <p class="texto">Somos una corporación multinacional constituida en el año 2002 con 14 años de experiencia en el mercado mexicano y centroamericano.</p><br>
@@ -168,7 +172,7 @@
            <video class="videoDisatel" src="video/newbb.mp4" controls></video>
 
              <!-- Nuestra Presencia -->
-             <strong><h1 class="titulo">NUESTRA <span>PRESENCIA</span></h1></strong><hr class="division2"><br><br>
+             <strong><h1 class="titulo">NUESTRA PRESENCIA</h1></strong><hr class="division2"><br><br>
          </div>
          <div class="col-lg-3  col-sm-3 col-md-3"></div>
        </div>
@@ -228,7 +232,7 @@
 
        <!-- Nuestras Soluciones - Botones -->
        <div class="row nuestrasSolucionesBtns">
-         <strong><h1 class="titulo">NUESTRAS <span>SOLUCIONES</span></h1></strong><hr class="division2"><br><br>
+         <strong><h1 class="titulo">NUESTRAS SOLUCIONES</h1></strong><hr class="division2"><br><br>
          <div class="container">
            <div class="row">
              <div class="col-lg-4 col-xs-0 col-sm-4 col-md-4">
@@ -270,13 +274,13 @@
        <!-- Soluciones Titulo-->
        <div class="row nuestrasSolucionesTitulo">
           <div class="col-lg-12 col-xs-12 col-sm-12 col-md-12">
-            <strong><h1 class="titulo tituloNS">NUESTRAS <span>SOLUCIONES</span></h1></strong><hr class="division2"><br><br>
+            <strong><h1 class="titulo tituloNS">NUESTRAS SOLUCIONES</h1></strong><hr class="division2"><br><br>
           </div>
        </div>
 
        <!-- Nuestras Soluciones - Descripciones - GPS -->
        <a name="GPS"></a>
-       <div class="row nuestrasSolucionesDesc GPS">
+       <div class="row nuestrasSolucionesDesc izquierda GPS">
 
           <div class="col-lg-6 col-sm-6 col-md-6">
             <!-- 3. Flechas Grises -->
@@ -290,7 +294,7 @@
              <!-- Imagen  -->
              <img class="solucionesImg img-responsive" src="img/gps/gps2.png" alt="Imagen GPS"/><br>
           </div>
-          <div class="col-lg-6 col-sm-6 col-md-6">
+          <div class="col-lg-6 col-sm-6 col-md-6 margen">
 
            <!-- Logo  -->
            <img class="solucionesLogos img-responsive" src="img/assets/disatel-gps-logo.png" alt="Logo GPS"/><br>
@@ -312,7 +316,7 @@
 
        <!-- Nuestras Soluciones - Descripciones - TMT -->
        <a name="TMT"></a>
-       <div class="row nuestrasSolucionesDesc TMT">
+       <div class="row nuestrasSolucionesDesc derecha TMT">
           <div class="col-lg-6 col-sm-6 col-md-6">
             <!-- 3. Flechas Grises -->
             <svg class="flechas"xmlns="http://www.w3.org/2000/svg" viewBox="0 0 156.72 56.51">
@@ -325,7 +329,7 @@
              <!-- Imagen  -->
              <img class="solucionesImg img-responsive" src="img/telemetria/t6.jpg" alt="Imagen TMT"/><br>
           </div>
-          <div class="col-lg-6 col-sm-6 col-md-6">
+          <div class="col-lg-6 col-sm-6 col-md-6 margen">
 
            <!-- Logo  -->
            <img class="solucionesLogos img-responsive" src="img/assets/disatel-tmt-logo.png" alt="Logo TMT"/><br>
@@ -345,7 +349,7 @@
 
        <!-- Nuestras Soluciones - Descripciones - SAT -->
        <a name="SAT"></a>
-       <div class="row nuestrasSolucionesDesc SAT">
+       <div class="row nuestrasSolucionesDesc izquierda SAT">
           <div class="col-lg-6 col-sm-6 col-md-6">
             <!-- 3. Flechas Grises -->
             <svg class="flechas"xmlns="http://www.w3.org/2000/svg" viewBox="0 0 156.72 56.51">
@@ -358,7 +362,7 @@
              <!-- Imagen  -->
              <img class="solucionesImg img-responsive" src="img/satelital/s1.png" alt="Imagen SAT"/><br>
           </div>
-          <div class="col-lg-6 col-sm-6 col-md-6">
+          <div class="col-lg-6 col-sm-6 col-md-6 margen">
 
            <!-- Logo  -->
            <img class="solucionesLogos img-responsive" src="img/assets/disatel-sat-logo.png" alt="Logo SAT"/><br>
@@ -373,7 +377,7 @@
 
        <!-- Nuestras Soluciones - Descripciones - VIDEO -->
        <a name="VIDEO"></a>
-       <div class="row nuestrasSolucionesDesc VIDEO">
+       <div class="row nuestrasSolucionesDesc derecha VIDEO">
           <div class="col-lg-6 col-sm-6 col-md-6">
             <!-- 3. Flechas Grises -->
             <svg class="flechas"xmlns="http://www.w3.org/2000/svg" viewBox="0 0 156.72 56.51">
@@ -386,7 +390,7 @@
              <!-- Imagen  -->
              <img class="solucionesImg img-responsive" src="img/video/v1.png" alt="Imagen VIDEO"/><br>
           </div>
-          <div class="col-lg-6 col-sm-6 col-md-6">
+          <div class="col-lg-6 col-sm-6 col-md-6 margen">
 
            <!-- Logo  -->
            <img class="solucionesLogos img-responsive" src="img/assets/disatel-video-logo.png" alt="Logo VIDEO"/><br>
@@ -401,7 +405,7 @@
 
        <!-- Nuestras Soluciones - Descripciones - MÓVIL -->
        <a name="MOVIL"></a>
-       <div class="row nuestrasSolucionesDesc MOVIL">
+       <div class="row nuestrasSolucionesDesc izquierda MOVIL">
           <div class="col-lg-6 col-sm-6 col-md-6">
             <!-- 3. Flechas Grises -->
             <svg class="flechas"xmlns="http://www.w3.org/2000/svg" viewBox="0 0 156.72 56.51">
@@ -414,7 +418,7 @@
              <!-- Imagen  -->
              <img class="solucionesImg img-responsive" src="img/movil/m1.png" alt="Imagen MÓVIL"/><br>
           </div>
-          <div class="col-lg-6 col-sm-6 col-md-6">
+          <div class="col-lg-6 col-sm-6 col-md-6 margen">
 
            <!-- Logo  -->
            <img class="solucionesLogos img-responsive" src="img/assets/disatel-movil-logo.png" alt="Logo MÓVIL"/><br>
@@ -434,7 +438,7 @@
 
        <!-- Nuestras Soluciones - Descripciones - LOCK -->
        <a name="LOCK"></a>
-       <div class="row nuestrasSolucionesDesc LOCK">
+       <div class="row nuestrasSolucionesDesc derecha LOCK">
           <div class="col-lg-6 col-sm-6 col-md-6">
             <!-- 3. Flechas Grises -->
             <svg class="flechas"xmlns="http://www.w3.org/2000/svg" viewBox="0 0 156.72 56.51">
@@ -447,7 +451,7 @@
              <!-- Imagen  -->
              <img class="solucionesImg img-responsive" src="img/lock/l1.png" alt="Imagen LOCK"/><br>
           </div>
-          <div class="col-lg-6 col-sm-6 col-md-6">
+          <div class="col-lg-6 col-sm-6 col-md-6 margen">
 
            <!-- Logo  -->
            <img class="solucionesLogos img-responsive" src="img/assets/disatel-lock-logo.png" alt="Logo LOCK"/><br>
@@ -467,7 +471,7 @@
 
        <!-- Nuestras Soluciones - Descripciones - WIFI -->
        <a name="WIFI"></a>
-       <div class="row nuestrasSolucionesDesc WIFI">
+       <div class="row nuestrasSolucionesDesc izquierda WIFI">
           <div class="col-lg-6 col-sm-6 col-md-6">
             <!-- 3. Flechas Grises -->
             <svg class="flechas"xmlns="http://www.w3.org/2000/svg" viewBox="0 0 156.72 56.51">
@@ -480,7 +484,7 @@
              <!-- Imagen  -->
              <img class="solucionesImg img-responsive" src="img/wifi/wifi1.png" alt="Imagen WIFI"/><br>
           </div>
-          <div class="col-lg-6 col-sm-6 col-md-6">
+          <div class="col-lg-6 col-sm-6 col-md-6 margen">
 
            <!-- Logo  -->
            <img class="solucionesLogos img-responsive" src="img/assets/disatel-wifi-logo.png" alt="Logo WIFI"/><br>
@@ -576,7 +580,7 @@
 
                 <!-- Contenido -->
                 <div class="form-row">
-                        <textarea class="textDesc" id="mensajeText" name="textarea" placeholder="Solución en la que estás interesado*"></textarea>
+                        <textarea class="textDesc" id="mensajeText" name="textarea" placeholder="Productos en los que estás interesado*"></textarea>
                 </div>
 
                 <!-- Boton -->
@@ -601,72 +605,105 @@
          <title>corners-2</title>
          <polygon class="st1" points="1259.4,0 640.2,122.9 0,0 0,134.9 1259.4,134.9 "/>
          </svg>
-         <div class="col-lg-2 col-md-2"></div>
-         <div class="col-lg-4 col-md-4 bloqueCont1">
+         <!-- <div class="col-lg-2 col-md-2 col-sm-2"></div> -->
+         <div class="container">
+           <div class="row">
+             <div class="col-lg-6 col-md-6 col-sm-6 col-xs-0">
 
-           <!-- México -->
-           <div class="contMX">
-             <strong><h1 class="tituloPaises">MÉXICO D.F.</h1></strong>
-             <p class="texto">TEL: +52 55 5522.2160</p>
-             <p class="texto">LADA SIN COSTO</p>
-             <p class="texto">018007 DISATEL</p>
-             <u><p class="texto">info.mx@grupodisatel.com</p></u><br>
+               <!-- México -->
+               <div class="contMX">
+                 <strong><h1 class="tituloPaises">MÉXICO</h1></strong>
+                 <p class="textoPaises">TEL: +52 55 5522.2160</p>
+                 <p class="textoPaises">LADA SIN COSTO</p>
+                 <p class="textoPaises">018007 DISATEL</p>
+                 <u><p class="textoPaises">info.mx@grupodisatel.com</p></u><br>
+               </div>
+
+             </div>
+
+             <div class="col-lg-6 col-md-6 col-sm-6 col-xs-0">
+
+               <!-- Guatemala -->
+               <div class="contGT">
+                 <strong><h1 class="tituloPaises">GUATEMALA</h1></strong>
+                 <p class="textoPaises">PBX: +502 2427.3400</p>
+                 <p class="textoPaises">FAX: +502 2427.3450</p>
+                 <u><p class="textoPaises">info.gt@grupodisatel.com</p></u><br>
+               </div>
+
+             </div>
            </div>
 
+           <div class="row">
+             <div class="col-lg-6 col-md-6 col-sm-6">
 
-           <!-- El Salvador -->
-           <div class="contSV">
-             <strong><h1 class="tituloPaises">EL SALVADOR</h1></strong>
-             <p class="texto">PBX: +503 2536.1400</p>
-             <p class="texto">FAX: +503 2536.1407</p>
-             <u><p class="texto">info.sv@grupodisatel.com</p></u><br>
+               <!-- El Salvador -->
+               <div class="contSV">
+                 <strong><h1 class="tituloPaises">EL SALVADOR</h1></strong>
+                 <p class="textoPaises">PBX: +503 2536.1400</p>
+                 <p class="textoPaises">FAX: +503 2536.1407</p>
+                 <u><p class="textoPaises">info.sv@grupodisatel.com</p></u><br>
+               </div>
+
+             </div>
+
+             <div class="col-lg-6 col-md-6 col-sm-6">
+
+               <!-- Honduras -->
+               <div class="contHN">
+                 <strong><h1 class="tituloPaises">HONDURAS</h1></strong>
+                 <p class="textoPaises">PBX: +502 2427.3400</p>
+                 <p class="textoPaises">FAX: +502 2427.3450</p>
+                 <u><p class="textoPaises">info.hn@grupodisatel.com</p></u><br>
+               </div>
+
+             </div>
            </div>
 
-           <!-- Nicaragua -->
-           <div class="contNI">
-             <strong><h1 class="tituloPaises">NICARAGUA</h1></strong>
-             <p class="texto">PBX: +505 2252.4330</p>
-             <p class="texto">FAX: +505 2278.7036</p>
-             <u><p class="texto">info.ni@grupodisatel.com</p></u><br>
+           <div class="row">
+             <div class="col-lg-6 col-md-6 col-sm-6">
+
+               <!-- Nicaragua -->
+               <div class="contNI">
+                 <strong><h1 class="tituloPaises">NICARAGUA</h1></strong>
+                 <p class="textoPaises">PBX: +505 2252.4330</p>
+                 <p class="textoPaises">FAX: +505 2278.7036</p>
+                 <u><p class="textoPaises">info.ni@grupodisatel.com</p></u><br>
+               </div>
+
+             </div>
+
+             <div class="col-lg-6 col-md-6 col-sm-6">
+
+               <!-- Costa Rica -->
+               <div class="contCR">
+                 <strong><h1 class="tituloPaises">COSTA RICA</h1></strong>
+                 <p class="textoPaises">TEL: +507 387.0315</p>
+                 <p class="textoPaises">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;+507 387.0316</p>
+                 <u><p class="textoPaises">info.cr@grupodisatel.com</p></u><br>
+               </div>
+
+             </div>
            </div>
 
-           <!-- Panamá -->
-           <div class="contPA">
-             <strong><h1 class="tituloPaises">PANAMÁ</h1></strong>
-             <p class="texto">TEL: +507 387.0315</p>
-             <p class="texto">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;+507 387.0316</p>
-             <u><p class="texto">info.pa@grupodisatel.com</p></u><br>
+           <div class="row">
+             <div class="col-lg-6 col-md-6 col-sm-6">
+
+               <!-- Panamá -->
+               <div class="contPA">
+                 <strong><h1 class="tituloPaises">PANAMÁ</h1></strong>
+                 <p class="textoPaises">TEL: +507 387.0315</p>
+                 <p class="textoPaises">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;+507 387.0316</p>
+                 <u><p class="textoPaises">info.pa@grupodisatel.com</p></u><br>
+               </div>
+
+             </div>
+
+             <div class="col-lg-6 col-md-6 col-sm-6"></div>
            </div>
 
          </div>
-         <div class="col-lg-4 col-md-4 bloqueCont2">
 
-           <!-- Guatemala -->
-           <div class="contGT">
-             <strong><h1 class="tituloPaises">GUATEMALA</h1></strong>
-             <p class="texto">PBX: +502 2427.3400</p>
-             <p class="texto">FAX: +502 2427.3450</p>
-             <u><p class="texto">info.gt@grupodisatel.com</p></u><br>
-           </div>
-
-           <!-- Honduras -->
-           <div class="contHN">
-             <strong><h1 class="tituloPaises">HONDURAS</h1></strong>
-             <p class="texto">PBX: +502 2427.3400</p>
-             <p class="texto">FAX: +502 2427.3450</p>
-             <u><p class="texto">info.hn@grupodisatel.com</p></u><br>
-           </div>
-
-           <!-- Costa Rica -->
-           <div class="contCR">
-             <strong><h1 class="tituloPaises">COSTA RICA</h1></strong>
-             <p class="texto">TEL: +507 387.0315</p>
-             <p class="texto">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;+507 387.0316</p>
-             <u><p class="texto">info.cr@grupodisatel.com</p></u><br>
-           </div>
-
-         </div>
-         <div class="col-lg-2 col-md-2"></div>
        </div>
 
 
