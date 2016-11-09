@@ -647,6 +647,7 @@ textarea::-moz-placeholder{
   }
 }
 
+/*Botones en 1280px*/
 @media (max-width: 1280px){
   /* Nuestras Soluciones - GPS */
   .GPS .botonSoluciones{
@@ -669,6 +670,7 @@ textarea::-moz-placeholder{
   }
 }
 
+/*Botones en 980px*/
 @media (max-width: 980px){
   /* Nuestras Soluciones - GPS */
   .GPS .botonSoluciones{

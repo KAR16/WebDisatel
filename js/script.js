@@ -1,6 +1,7 @@
 //Variables Soluciones Disatel
 var solucionesDisatel = [];
 
+//Funcion Limpiar
 function limpiarCampos(){
 
   //Limpiamos los Inputs
