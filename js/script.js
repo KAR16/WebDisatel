@@ -58,7 +58,7 @@ function enviarMail(solucionesDisatel){
         Data: "Datos del Cliente: \n"+
               "Nombre: " + nombre + "\n"+
               "Email: "+ email +"\n"+
-              "Pais: "+ pais +"\n"+
+              "País: "+ pais +"\n"+
               "Telefono: "+ telefono +"\n"+
               "Soluciones en las que esta interesado:"+"\n"+ detalleSoluciones +
               "Mensaje: " + mensaje, /* required */
@@ -139,7 +139,7 @@ function validarInputs(){
     alerta("¡Alerta!", "Error en campo email", "warning");
   }
   //Validando Pais
-  else if ($('#paisInput').val() === ''){
+  else if ($('#paisInput').val() === 'País*'){
     document.getElementById("paisInput").style.borderColor="blue";
     alerta("¡Alerta!", "Error en campo pais", "warning");
   }

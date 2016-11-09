@@ -116,12 +116,12 @@ footer {
 
   /* Nuestras Soluciones - GPS */
   .GPS .botonSoluciones{
-    margin-top: 5% !important;
+    margin-top: 30.5% !important;
   }
 
   /* Nuestras Soluciones - TMT */
   .TMT .botonSoluciones{
-    margin-top: 5% !important;
+    margin-top: 23% !important;
   }
 
   /* Nuestras Soluciones Derecha - TMT / VIDEO / lOCK */
@@ -141,12 +141,12 @@ footer {
 
   /* Nuestras Soluciones - MOVIL */
   .MOVIL .botonSoluciones{
-    margin-top: 5% !important;
+    margin-top: 30.6% !important;
   }
 
 /* Nuestras Soluciones - LOCK */
   .LOCK .botonSoluciones{
-    margin-top: 5% !important;
+    margin-top: 34.2% !important;
   }
 
   /* Nuestras Soluciones */
@@ -473,6 +473,15 @@ input[type="text"]{
   font-size: 1.5em;
 }
 
+select{
+  height: 50px;
+  width: 100%;
+  color: black;
+  border: 1px solid #E01F26;
+  padding-left: 3%;
+  font-size: 1.5em;
+}
+
 input[type="text"]::-webkit-input-placeholder{
   color: #E01F26;
   font-size: 1em;
@@ -579,12 +588,12 @@ textarea::-moz-placeholder{
   width: 100%;
   color: #FFF;
   font-size: 1.5em;
-
 }
 
 /********************* Parte 10 - Contactanos Numeros *****************/
 .contTelefonos{
   background-color: #CCCCCE;
+  margin-top: -5px;
 }
 
 /* Titulo Paises */
@@ -638,6 +647,50 @@ textarea::-moz-placeholder{
   }
 }
 
+@media (max-width: 1280px){
+  /* Nuestras Soluciones - GPS */
+  .GPS .botonSoluciones{
+    margin-top: 28.5% !important;
+  }
+
+  /* Nuestras Soluciones - TMT */
+  .TMT .botonSoluciones{
+    margin-top: 12% !important;
+  }
+
+  /* Nuestras Soluciones - MOVIL */
+  .MOVIL .botonSoluciones{
+    margin-top: 29.1% !important;
+  }
+
+  /* Nuestras Soluciones - LOCK */
+  .LOCK .botonSoluciones{
+    margin-top: 34.4% !important;
+  }
+}
+
+@media (max-width: 980px){
+  /* Nuestras Soluciones - GPS */
+  .GPS .botonSoluciones{
+    margin-top: -4.5% !important;
+  }
+
+  /* Nuestras Soluciones - TMT */
+  .TMT .botonSoluciones{
+    margin-top: 12% !important;
+  }
+
+  /* Nuestras Soluciones - MOVIL */
+  .MOVIL .botonSoluciones{
+    margin-top: 3.6% !important;
+  }
+
+  /* Nuestras Soluciones - LOCK */
+  .LOCK .botonSoluciones{
+    margin-top: 3.3% !important;
+  }
+}
+
 @media (max-width: 1200px){
   .navbar-nav{
         font-size: 0.8em !important;
@@ -668,11 +721,6 @@ textarea::-moz-placeholder{
 @media (max-width: 992px){
   .navbar-nav{
     font-size: 0.8em !important;
-    /*padding-left: 5%;
-    padding-right: 5%;
-    padding-top: 15%;
-    margin-right: -20%;
-    margin-left: -35%;*/
     padding-top: 18%;
     margin-right: -20%;
     margin-left: -35%;
@@ -687,6 +735,12 @@ textarea::-moz-placeholder{
 @media (max-width: 768px){
 
   .logo{
+    margin-left: 0%;
+  }
+
+  .navbar-nav{
+    padding-top: 0%;
+    margin-right: 0%;
     margin-left: 0%;
   }
 

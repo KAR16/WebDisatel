@@ -139,6 +139,7 @@
          <div class="col-lg-3 col-sm-3 col-md-3"></div>
        </div>
 
+       <a name="QS"></a>
        <div class="row">
          <div class="col-lg-12"></div>
          <!-- 2. Corner Gris 1 -->
@@ -154,7 +155,6 @@
        </div>
 
        <!-- Quienes Somos -->
-       <a name="QS"></a>
        <div class="row quienesSomos">
          <div class="col-lg-3 col-sm-3 col-md-3"></div>
          <div class="col-lg-6 col-xs-12 col-sm-6 col-md-6">
@@ -520,7 +520,16 @@
 
                 <!-- Pais -->
                 <div class="form-row inputPais">
-                    <input id="paisInput" type="text" name="pais" placeholder="País*" onkeypress='return event.charCode >= 65 && event.charCode <= 90 || event.charCode >= 97 && event.charCode <= 122 || event.charCode == 32 || event.charCode == 225 || event.charCode == 233 || event.charCode == 237 || event.charCode == 243 || event.charCode == 250 || event.charCode == 193 || event.charCode == 201 || event.charCode == 205 || event.charCode == 211 || event.charCode == 218 || event.charCode == 241 || event.charCode == 209'>
+                    <select id="paisInput" name="pais" placeholder="País*">
+                        <option>País*</option>
+                        <option>México</option>
+                        <option>Guatemala</option>
+                        <option>El Salvador</option>
+                        <option>Honduras</option>
+                        <option>Nicaragua</option>
+                        <option>Costa Rica</option>
+                        <option>Panamá</option>
+                    </select>
                 </div>
 
                 <!-- Telefono -->
@@ -592,9 +601,8 @@
            </div>
        </div>
 
-
-       <!-- Contáctanos Teléfonos -->
-       <div class="row contTelefonos">
+       <div class="row">
+         <div class="col-lg-12"></div>
          <!-- 4. Corner Gris 2 -->
          <svg version="1.1" id="Layer_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1259.4 134.9" style="enable-background:new 0 0 1259.4 134.9;" xml:space="preserve">
          <style type="text/css">
@@ -605,6 +613,10 @@
          <title>corners-2</title>
          <polygon class="st1" points="1259.4,0 640.2,122.9 0,0 0,134.9 1259.4,134.9 "/>
          </svg>
+       </div>
+
+       <!-- Contáctanos Teléfonos -->
+       <div class="row contTelefonos">
          <!-- <div class="col-lg-2 col-md-2 col-sm-2"></div> -->
          <div class="container">
            <div class="row">
