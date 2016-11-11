@@ -38,6 +38,34 @@ footer {
   border-color: #E01F26 !important;
 }
 
+.navbar-inverse .navbar-nav .open .dropdown-menu>li>a{
+  color: #FFF !important;
+  background-color: #E01F26 !important;
+}
+
+.dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover{
+  background-color: #080808 !important;
+}
+
+.dropdown-menu>li>a {
+    display: block;
+    padding: 3px 20px;
+    clear: both;
+    font-weight: 400;
+    line-height: 1.42857143;
+    color: #333;
+    white-space: nowrap;
+}
+
+.dropdown-menu{
+  color: #FFF !important;
+  background-color: #E01F26 !important;
+}
+
+.subMenuPais{
+  color: #FFF !important;
+}
+
 .navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form{
   border-color: #E01F26 !important;
 }
@@ -59,13 +87,15 @@ footer {
   border-color: none !important;
 }
 
-/* Media Query - Min 768px*/
-@media (min-width: 768px){
+/* Media Query - Min 767px*/
+@media (min-width: 767px){
   /* Navbar */
   .navbar-nav{
     padding-left: 5%;
     margin-right: -20%;
   }
+
+
 
   .navbar-nav>li>a{
     padding-top: 0 !important;
@@ -734,16 +764,21 @@ textarea::-moz-placeholder{
 }
 
 
-@media (max-width: 768px){
+@media (max-width: 767px){
 
   .logo{
     margin-left: 0%;
   }
-
+  /* Navbar */
   .navbar-nav{
     padding-top: 0%;
     margin-right: 0%;
     margin-left: 0%;
+  }
+
+  .navbar-nav .open .dropdown-menu>li>a {
+    line-height: 0px !important;
+    height: 40px !important;
   }
 
   /* Carrusel */

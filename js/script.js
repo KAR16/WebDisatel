@@ -260,17 +260,18 @@ $(".CONT").click(function(){
     }
 });
 
+$('[data-submenu]').submenupicker();
 //Acceso Usuarios
-$(".AU").click(function(){
-    if ($(".navbar-collapse").hasClass('in')){
-        //Navbar-Collapse
-        $(".navbar-collapse").removeClass("collapse in");
-        $(".navbar-collapse").attr('aria-expanded', false);
-        $(".navbar-collapse").attr('style', 'height: 1px');
-        $(".navbar-collapse").addClass("collapse");
-
-        //Boton Navbar-Toogle
-        $(".navbar-toggle").addClass("collapsed");
-        $(".navbar-toggle").attr('aria-expanded', false);
-    }
-});
+// $(".AU").click(function(){
+//     if ($(".navbar-collapse").hasClass('in')){
+//         //Navbar-Collapse
+//         $(".navbar-collapse").removeClass("collapse in");
+//         $(".navbar-collapse").attr('aria-expanded', false);
+//         $(".navbar-collapse").attr('style', 'height: 1px');
+//         $(".navbar-collapse").addClass("collapse");
+//
+//         //Boton Navbar-Toogle
+//         $(".navbar-toggle").addClass("collapsed");
+//         $(".navbar-toggle").attr('aria-expanded', false);
+//     }
+// });
