@@ -33,7 +33,8 @@
   .subservices-wrapper .subservice-box {
     padding: 20px; }
     .subservices-wrapper .subservice-box h4 {
-      font-weight: bold; }
+      font-weight: bold;
+     }
   .subservices-wrapper .sub-img {
     display: block;
     margin: auto;
@@ -44,6 +45,18 @@
     .subservices-wrapper .sub-img2 {
       border-radius: 0% !important;
     }
+
+    .loc-aid{
+      width:500px !important;
+      /*max-width:600px;*/
+    }
+
+    .centrado{
+      text-align: center;
+      font-weight: bold;
+      color:#C61330;
+    }
+
 
 .st1 {
   fill: #eee !important; }
