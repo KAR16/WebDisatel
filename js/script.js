@@ -29,20 +29,69 @@ function enviarMail(solucionesDisatel){
   var telefono = $('#telefonoInput').val();
   var mensaje = $('#mensajeText').val();
 
+  //Template del correo electrónico
+  var template = "";
+
+
   //Aqui se guardaran las soluciones de Disatel ordenadas
   var detalleSoluciones = "";
 
   //Descomponemos las Soluciones para la vista
   for (var item = 0; item < solucionesDisatel.length; item++){
-    detalleSoluciones+= solucionesDisatel[item] + "\n";
+    detalleSoluciones+= solucionesDisatel[item] + "<br>";
   }
+
+  template = '<html>'+
+              '<body style="padding-left:20%;padding-right:20%;padding-top:5%;font-family:Lato;background-color:#eee;">'+
+                '<div style="height:60px;background-color:#e01f26">'+
+                  '<h1 style="font-weight:800;text-align:center;color:#fff;font-size:1.8em">FORMULARIO</h1>'+
+                  '<hr style="width:10%;height:5px;background-color:#fff;border-top:none!important"><br><br>'+
+                '</div>'+
+
+                '<div style="margin-top:5%">'+
+                  '<p style="font-size:1.8em;text-align:left;color:#e01f26">CLIENTE: </p>'+
+                  '<p style="font-size:1.8em;text-align:left;color:#595a5c">'+ nombre +'</p>'+
+                '</div>'+
+
+                '<div style="margin-top:5%">'+
+                  '<strong><p style="font-size:1.8em;text-align:left;color:#e01f26">E-MAIL: </p></strong>'+
+                  '<strong><p style="font-size:1.8em;text-align:left;color:#595a5c">'+ email +'</strong></p>'+
+                '</div>'+
+
+                '<div style="margin-top:5%">'+
+                  '<strong><p style="font-size:1.8em;text-align:left;color:#e01f26">TELÉFONO: </p></strong>'+
+                  '<p style="font-size:1.8em;text-align:left;color:#595a5c">'+ telefono +'</p>'+
+                '</div>'+
+
+
+                '<div style="margin-top:5%">'+
+                  '<strong><p style="font-size:1.8em;text-align:left;color:#e01f26">PAIS: </p></strong>'+
+                  '<p style="font-size:1.8em;text-align:left;color:#595a5c">'+ pais +'</p>'+
+                '</div>'+
+
+                '<div style="margin-top:5%">'+
+                  '<strong><p style="font-size:1.8em;text-align:left;color:#e01f26">INTERESES: </p></strong>'+
+                  '<p style="font-size:1.8em;text-align:left;color:#595a5c">'+ detalleSoluciones +'</p>'+
+                '</div>'+
+
+                '<div style="margin-top:5%">'+
+                  '<strong><p style="font-size:1.8em;text-align:left;color:#e01f26">MENSAJE: </p></strong>'+
+                  '<p style="font-size:1.8em;text-align:left;color:#595a5c">'+ mensaje +'</p>'+
+                '</div>'+
+
+                '<div style="display:flex;margin-top:5%;padding-top:3%;padding-bottom:10%">'+
+                  '<img src="http://cliente.quieroaplicar.com/uploads/logodisateltransparente.png" style="height:100px;width:200px;margin:auto" alt="Disatel Logo"><br>'+
+                '</div>'+
+
+              '</body>'+
+              '</html>';
 
 
   //Variable SES
   var ses = new AWS.SES({
     apiVersion: '2010-12-01',
-    accessKeyId: 'AKIAI2ZNPOJKFLN5Z4LQ',
-    secretAccessKey: '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',
+    accessKeyId: 'AKIAINOLQSSVGQL46DAA',
+    secretAccessKey: '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',
     region: 'us-west-2'
   });
 
@@ -55,14 +104,8 @@ function enviarMail(solucionesDisatel){
    },
    Message: { /* Mensaje */
      Body: { /* Cuerpo del Mensaje */
-       Text: {
-        Data: "Datos del Cliente: \n"+
-              "Nombre: " + nombre + "\n"+
-              "Email: "+ email +"\n"+
-              "País: "+ pais +"\n"+
-              "Telefono: "+ telefono +"\n"+
-              "Soluciones en las que esta interesado:"+"\n"+ detalleSoluciones +
-              "Mensaje: " + mensaje, /* required */
+       Html: {
+        Data: template /* required */
       }
      },
      Subject: { /* required */

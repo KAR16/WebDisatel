@@ -41,6 +41,10 @@
     border-radius: 50%;
     margin-bottom: 20px; }
 
+    .subservices-wrapper .sub-img2 {
+      border-radius: 0% !important;
+    }
+
 .st1 {
   fill: #eee !important; }
 
