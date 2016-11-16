@@ -1,45 +1,30 @@
 //Funcion de Enviar Mail
 function enviarMail(email, template){
-  //Variable SES
-  var ses = new AWS.SES({
-    apiVersion: '2010-12-01',
-    accessKeyId: 'AKIAINOLQSSVGQL46DAA',
-    secretAccessKey: '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',
-    region: 'us-west-2'
+  var url = "https://qi7w3iqsk5.execute-api.us-west-2.amazonaws.com/prod/enviarMail";
+  var params = { email: email, template: template};
+
+  $.ajax({
+        type: "POST",
+        dataType: "jsonw",
+  	    crossDomain: true,
+        contentType: 'application/json',
+        url:url,
+        data: JSON.stringify(params),
+        //processData: false,
+        success: function(data) {
+              var text=JSON.stringify(data);
+              alert(text);
+              //console.log(data);
+
+              //Alerta de E-mail enviado con éxito
+              alerta("¡Excelente!", "Formulario enviado éxitosamente", "success");
+
+              //Limpiamos los Campos del Formulario
+              limpiarCampos();
+
+        },error: function(data) {
+              console.log(data);
+        }
   });
 
-  //Parametros a enviar
-  var params = {
-   Destination: {
-     ToAddresses: [
-       'kherrera16@gmail.com' /* Receptor */
-     ]
-   },
-   Message: { /* Mensaje */
-     Body: { /* Cuerpo del Mensaje */
-       Html: {
-        Data: template /* required */
-      }
-     },
-     Subject: { /* required */
-       Data: 'Formulario Disatel', /* Asunto */
-     }
-   },
-   Source: 'kherrera16@gmail.com', /* Emisor  */
-   ReplyToAddresses: [
-     email, /* Responder A */
-   ]
-  };
-
-  //Función SES de envío de correo
-  ses.sendEmail(params, function(err, data) {
-   if (err) console.log(err, err.stack); // an error occurred
-   else     console.log(data, params);   // successful response
-
-   //Alerta de E-mail enviado con éxito
-   alerta("¡Excelente!", "Formulario enviado éxitosamente", "success");
-
-   //Limpiamos los Campos del Formulario
-   limpiarCampos();
-  });
 }
