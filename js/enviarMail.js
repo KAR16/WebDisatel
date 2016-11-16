@@ -16,15 +16,15 @@ function enviarMail(email, template){
               alert(text);
               //console.log(data);
 
-              //Alerta de E-mail enviado con éxito
-              alerta("¡Excelente!", "Formulario enviado éxitosamente", "success");
-
-              //Limpiamos los Campos del Formulario
-              limpiarCampos();
-
         },error: function(data) {
-              console.log(data);
+              //console.log(data);
         }
   });
+
+  //Alerta de E-mail enviado con éxito
+  alerta("¡Excelente!", "Formulario enviado éxitosamente", "success");
+
+  //Limpiamos los Campos del Formulario
+  limpiarCampos();
 
 }
