@@ -7,7 +7,7 @@ function limpiarCampos(){
   //Limpiamos los Inputs
   $("#nombreInput").val("");
   $("#emailInput").val("");
-  $("#paisInput").val("");
+  $("#paisInput").val("País*");
   $("#telefonoInput").val("");
   $("#mensajeText").val("");
 
@@ -29,9 +29,6 @@ function parametrosMail(solucionesDisatel){
   var telefono = $('#telefonoInput').val();
   var mensaje = $('#mensajeText').val();
 
-  //Template del correo electrónico
-  var template = "";
-
 
   //Aqui se guardaran las soluciones de Disatel ordenadas
   var detalleSoluciones = "";
@@ -41,52 +38,8 @@ function parametrosMail(solucionesDisatel){
     detalleSoluciones+= solucionesDisatel[item] + "<br>";
   }
 
-  template = '<html>'+
-              '<body style="padding-left:20%;padding-right:20%;padding-top:5%;font-family:Lato;background-color:#eee;">'+
-                '<div style="height:60px;background-color:#e01f26">'+
-                  '<h1 style="font-weight:800;text-align:center;color:#fff;font-size:1.8em">FORMULARIO</h1>'+
-                  '<hr style="width:10%;height:5px;background-color:#fff;border-top:none!important"><br><br>'+
-                '</div>'+
 
-                '<div style="margin-top:5%">'+
-                  '<p style="font-size:1.8em;text-align:left;color:#e01f26">CLIENTE: </p>'+
-                  '<p style="font-size:1.8em;text-align:left;color:#595a5c">'+ nombre +'</p>'+
-                '</div>'+
-
-                '<div style="margin-top:5%">'+
-                  '<strong><p style="font-size:1.8em;text-align:left;color:#e01f26">E-MAIL: </p></strong>'+
-                  '<strong><p style="font-size:1.8em;text-align:left;color:#595a5c">'+ email +'</strong></p>'+
-                '</div>'+
-
-                '<div style="margin-top:5%">'+
-                  '<strong><p style="font-size:1.8em;text-align:left;color:#e01f26">TELÉFONO: </p></strong>'+
-                  '<p style="font-size:1.8em;text-align:left;color:#595a5c">'+ telefono +'</p>'+
-                '</div>'+
-
-
-                '<div style="margin-top:5%">'+
-                  '<strong><p style="font-size:1.8em;text-align:left;color:#e01f26">PAIS: </p></strong>'+
-                  '<p style="font-size:1.8em;text-align:left;color:#595a5c">'+ pais +'</p>'+
-                '</div>'+
-
-                '<div style="margin-top:5%">'+
-                  '<strong><p style="font-size:1.8em;text-align:left;color:#e01f26">INTERESES: </p></strong>'+
-                  '<p style="font-size:1.8em;text-align:left;color:#595a5c">'+ detalleSoluciones +'</p>'+
-                '</div>'+
-
-                '<div style="margin-top:5%">'+
-                  '<strong><p style="font-size:1.8em;text-align:left;color:#e01f26">MENSAJE: </p></strong>'+
-                  '<p style="font-size:1.8em;text-align:left;color:#595a5c">'+ mensaje +'</p>'+
-                '</div>'+
-
-                '<div style="display:flex;margin-top:5%;padding-top:3%;padding-bottom:10%">'+
-                  '<img src="http://cliente.quieroaplicar.com/uploads/logodisateltransparente.png" style="height:100px;width:200px;margin:auto" alt="Disatel Logo"><br>'+
-                '</div>'+
-
-              '</body>'+
-              '</html>';
-
-  enviarMail(email, template);
+  enviarMail(nombre, email, pais, telefono, mensaje, detalleSoluciones);
 
 }
 
@@ -144,7 +97,7 @@ function validarInputs(){
   //Validando Pais
   else if ($('#paisInput').val() === 'País*'){
     document.getElementById("paisInput").style.borderColor="blue";
-    alerta("¡Alerta!", "Error en campo pais", "warning");
+    alerta("¡Alerta!", "Error seleccione un país valido", "warning");
   }
   //Validando Telefono
   else if ($('#telefonoInput').val() === '' || $('#telefonoInput').val().length <= 6){
