@@ -131,6 +131,21 @@ $( ".enviar" ).click(function() {
 
 
 //Ocultar el Menú en Móvil
+//Body
+// $('body').click(function(){
+//   if ($(".navbar-collapse").hasClass('in')){
+//       //Navbar-Collapse
+//       $(".navbar-collapse").removeClass("collapse in");
+//       $(".navbar-collapse").attr('aria-expanded', false);
+//       $(".navbar-collapse").attr('style', 'height: 1px');
+//       $(".navbar-collapse").addClass("collapse");
+//
+//       //Boton Navbar-Toogle
+//       $(".navbar-toggle").addClass("collapsed");
+//       $(".navbar-toggle").attr('aria-expanded', false);
+//   }
+// });
+
 //Inicio
 $(".INICIO").click(function(){
     if ($(".navbar-collapse").hasClass('in')){
@@ -215,18 +230,27 @@ $(".CONT").click(function(){
     }
 });
 
+//Pop Up
+$('.AVISO').click(function() {
+  // alerta("¡Aviso de Privacidad!", "Estimados, muy buenos días\nEspero que estén muy bien y agradezco mucho su apoyo.\nDurante el fin de semana tuvimos a las personas de las filiales de Disatel probando la nueva página y surgieron ciertos inconvenientes que quisiéramos arreglar para poder tenerla lista. Los puntos que detallo a continuación son los que más surgieron. Con estos puntos ya queda funcionando bien la página. De ahí el 8-9 de diciembre tenemos la visita de todos los Gerentes Generales de las filiales y de ahí habrá un espacio para que den mejoras y con eso terminaríamos la página.\nLos cambios que más nos urgen son:\n1.       Cuando vemos la página en algún dispositivo móvil no está el menú desplegable de acceso a usuario. Esto está funcionando solamente en la computadora.\n\n2.       Cuando en el menú de hasta arriba das click en Nuestras Soluciones te lleva a Nuestra Presencia. ", "warning");
+
+  swal({
+  title: '¡Aviso de Privacidad!',
+  // text: 'Estimados, muy buenos días\nEspero que estén muy bien y agradezco mucho su apoyo.\nDurante el fin de semana tuvimos a las personas de las filiales de Disatel probando la nueva página y surgieron ciertos inconvenientes que quisiéramos arreglar para poder tenerla lista. Los puntos que detallo a continuación son los que más surgieron. Con estos puntos ya queda funcionando bien la página. De ahí el 8-9 de diciembre tenemos la visita de todos los Gerentes Generales de las filiales y de ahí habrá un espacio para que den mejoras y con eso terminaríamos la página.\nLos cambios que más nos urgen son:\n1.       Cuando vemos la página en algún dispositivo móvil no está el menú desplegable de acceso a usuario. Esto está funcionando solamente en la computadora.\n\n2.       Cuando en el menú de hasta arriba das click en Nuestras Soluciones te lleva a Nuestra Presencia.',
+  html:
+   '<p style="text-align:left">Estimados, muy buenos días</p><br><br> ' +
+   '<p style="text-align:left">Espero que estén muy bien y agradezco mucho su apoyo.\nDurante el fin de semana tuvimos a las personas de las filiales de Disatel probando la nueva página y surgieron ciertos inconvenientes que quisiéramos arreglar para poder tenerla lista. Los puntos que detallo a continuación son los que más surgieron. Con estos puntos ya queda funcionando bien la página. De ahí el 8-9 de diciembre tenemos la visita de todos los Gerentes Generales de las filiales y de ahí habrá un espacio para que den mejoras y con eso terminaríamos la página.</p><br><br> ' +
+   '<p style="text-align:left">Los cambios que más nos urgen son:</p><br> ' +
+   '<p style="text-align:left">1. Cuando vemos la página en algún dispositivo móvil no está el menú desplegable de acceso a usuario. Esto está funcionando solamente en la computadora.</p><br><br> ' +
+   '<p style="text-align:left">2. Cuando en el menú de hasta arriba das click en Nuestras Soluciones te lleva a Nuestra Presencia.</p>',
+  type: 'warning',
+  width: 800,
+  confirmButtonColor: '#E01F26',
+  confirmButtonText: 'ENTENDIDO',
+  dropShadow: "#FFF"
+  // padding: 100,
+  // background: '#fff url(//bit.ly/1Nqn9HU)'
+  })
+});
+
 $('[data-submenu]').submenupicker();
-//Acceso Usuarios
-// $(".AU").click(function(){
-//     if ($(".navbar-collapse").hasClass('in')){
-//         //Navbar-Collapse
-//         $(".navbar-collapse").removeClass("collapse in");
-//         $(".navbar-collapse").attr('aria-expanded', false);
-//         $(".navbar-collapse").attr('style', 'height: 1px');
-//         $(".navbar-collapse").addClass("collapse");
-//
-//         //Boton Navbar-Toogle
-//         $(".navbar-toggle").addClass("collapsed");
-//         $(".navbar-toggle").attr('aria-expanded', false);
-//     }
-// });

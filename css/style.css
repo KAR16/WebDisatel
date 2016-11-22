@@ -61,29 +61,11 @@ footer {
     white-space: nowrap;
 }
 
-.dropdown-submenu, .dropdown-menu>li{
-  width: 100%;
-  text-align: center;
-}
-
-.dropdown-submenu > a, .dropdown-menu > li > a{
-  padding-top: 5px !important;
-  padding-bottom: 5px !important;
-}
-
 
 .dropdown-menu{
   color: #FFF !important;
   background-color: #E01F26 !important;
 }
-
-/*.navbar-inverse .navbar-nav>.open>a{
-  background-color: #E01F26 !important;
-}*/
-
-/*.dropdown-submenu .open > li{
-  background-color: black !important;
-}*/
 
 .subMenuPais{
   color: #FFF !important;
@@ -108,6 +90,11 @@ footer {
 
 .navbar-inverse .navbar-toggle{
   border-color: none !important;
+}
+
+.dropdown-submenu > a, .dropdown-menu > li > a{
+  padding-top: 5px !important;
+  padding-bottom: 5px !important;
 }
 
 /* Media Query - Min 767px*/
@@ -135,6 +122,11 @@ footer {
 
   .nav li{
     display: inline-block !important;
+  }
+
+  .dropdown-submenu, .dropdown-menu>li{
+    width: 100%;
+    text-align: center;
   }
 
   /* Bordes del Menú*/
@@ -805,6 +797,11 @@ textarea::-moz-placeholder{
     height: 40px !important;
   }
 
+  .dropdown-submenu > a, .dropdown-menu > li > a{
+    padding-top: 15px !important;
+    padding-bottom: 15px !important;
+  }
+
   /* Carrusel */
   .carousel{
     height: 500px !important;
@@ -813,6 +810,7 @@ textarea::-moz-placeholder{
   .item, .carousel-inner, .carousel{
       max-height: 450px;
   }
+
 
   /* Navbar - Logo Disatel*/
   .logo{
