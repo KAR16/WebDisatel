@@ -38,7 +38,6 @@ function parametrosMail(solucionesDisatel){
     detalleSoluciones+= solucionesDisatel[item] + "<br>";
   }
 
-
   enviarMail(nombre, email, pais, telefono, mensaje, detalleSoluciones);
 
 }
@@ -114,7 +113,6 @@ function validarInputs(){
   }
 }
 
-
 //Funcion Enviar
 $( ".enviar" ).click(function() {
   //Colocamos los inputs en color rojo nuevamente
@@ -128,23 +126,6 @@ $( ".enviar" ).click(function() {
   //Nos dirijimos a la funcion Validar
   validarInputs();
 });
-
-
-//Ocultar el Menú en Móvil
-//Body
-// $('body').click(function(){
-//   if ($(".navbar-collapse").hasClass('in')){
-//       //Navbar-Collapse
-//       $(".navbar-collapse").removeClass("collapse in");
-//       $(".navbar-collapse").attr('aria-expanded', false);
-//       $(".navbar-collapse").attr('style', 'height: 1px');
-//       $(".navbar-collapse").addClass("collapse");
-//
-//       //Boton Navbar-Toogle
-//       $(".navbar-toggle").addClass("collapsed");
-//       $(".navbar-toggle").attr('aria-expanded', false);
-//   }
-// });
 
 //Inicio
 $(".INICIO").click(function(){
@@ -232,20 +213,16 @@ $(".CONT").click(function(){
 
 //Pop Up
 $('.AVISO').click(function() {
-  // alerta("¡Aviso de Privacidad!", "Estimados, muy buenos días\nEspero que estén muy bien y agradezco mucho su apoyo.\nDurante el fin de semana tuvimos a las personas de las filiales de Disatel probando la nueva página y surgieron ciertos inconvenientes que quisiéramos arreglar para poder tenerla lista. Los puntos que detallo a continuación son los que más surgieron. Con estos puntos ya queda funcionando bien la página. De ahí el 8-9 de diciembre tenemos la visita de todos los Gerentes Generales de las filiales y de ahí habrá un espacio para que den mejoras y con eso terminaríamos la página.\nLos cambios que más nos urgen son:\n1.       Cuando vemos la página en algún dispositivo móvil no está el menú desplegable de acceso a usuario. Esto está funcionando solamente en la computadora.\n\n2.       Cuando en el menú de hasta arriba das click en Nuestras Soluciones te lleva a Nuestra Presencia. ", "warning");
-
   swal({
-  title: '<h2 style="font-family:Lato;">¡Aviso de Privacidad México!</h2><br>',
-  // text: 'Estimados, muy buenos días\nEspero que estén muy bien y agradezco mucho su apoyo.\nDurante el fin de semana tuvimos a las personas de las filiales de Disatel probando la nueva página y surgieron ciertos inconvenientes que quisiéramos arreglar para poder tenerla lista. Los puntos que detallo a continuación son los que más surgieron. Con estos puntos ya queda funcionando bien la página. De ahí el 8-9 de diciembre tenemos la visita de todos los Gerentes Generales de las filiales y de ahí habrá un espacio para que den mejoras y con eso terminaríamos la página.\nLos cambios que más nos urgen son:\n1.       Cuando vemos la página en algún dispositivo móvil no está el menú desplegable de acceso a usuario. Esto está funcionando solamente en la computadora.\n\n2.       Cuando en el menú de hasta arriba das click en Nuestras Soluciones te lleva a Nuestra Presencia.',
+  title: '<h2 style="font-family:Lato;line-height:30px;">¡Aviso de Privacidad México!</h2><br>',
   html:
-   '<p style="text-align:left;font-family:Lato;padding-left:40px;padding-right:40px;">IDENTIDAD DOMICILIO DEL RESPONSABLE DE LA OBTENCIÓN Y TRATAMIENTO DE SUS DATOS PERSONALES.</p><br> ' +
-   '<p style="text-align:left;font-family:Lato;padding-left:40px;padding-right:40px;">DISATEL S.A. DE MÉXICO S.A. de C.V.  es la responsable de recabar su datos personales, del uso y tratamiento que se haga de los mismos,  circunscribiendo por su puesto su protección.</p><br> ' +
-   '<p style="text-align:left;font-family:Lato;padding-left:40px;padding-right:40px;">FINALIDAD DEL TRATAMIENTO DE SUS DATOS. Los datos personales  y documentos que recabamos de usted tiene como finalidad de darle la formalidad a la relación contractual que formaremos para brindarles los servicios de rastreo satelital y/o productos que ofrecemos  y almacenar su información en nuestra base de proveedores para enviarle.</p><br> ' +
-   '<p style="text-align:left;font-family:Lato;padding-left:40px;padding-right:40px;">Datos que quedan protegidos bajo el resguardo de datos confidenciales que no se otorgan a ninguna autoridad salvo petición fundada y motivada que obligue a ello</p><br>' +
-   '<p style="text-align:left;font-family:Lato;padding-left:40px;padding-right:40px;">DATOS PERSONALES QUE SE RECABAN. Nombre, teléfonos, correo electrónico, domicilio, dirección fiscal, teléfono (móvil y fijo) dirección e identificación oficial de sus representantes, datos financieros</p><br> ' +
-   '<p style="text-align:left;font-family:Lato;padding-left:40px;padding-right:40px;">CAMBIOS AL PRESENTE AVISO. Nos reservamos el derecho a efectuar en cualquier momento modificaciones o actualizaciones al presente aviso de privacidad, para la atención de novedades legislativas.</p><br> ' +
-   '<p style="text-align:left;font-family:Lato;padding-left:40px;padding-right:40px;">LA EMPRESA DISATEL S.A. DE MÉXICO S.A. de C.V. se compromete al cumplimiento de su obligación de secreto de datos de carácter personal y de su deber de conservarlos custodiados a través de medidas de seguridad de índole técnica y organizativas, que garanticen la seguridad de los mismos, eviten su alteración, pérdida, deterioro, tratamiento o acceso no autorizados y los posibles riesgos a que pudieran estar expuestos. Por su parte el usuario se compromete a que la información que suministra sea veraz y a actualizar la misma en caso que sgra alguna modificación.</p>',
-  // type: 'warning',
+   '<p style="text-align:left;font-family:Lato;padding-left:5%;padding-right:5%;">IDENTIDAD DOMICILIO DEL RESPONSABLE DE LA OBTENCIÓN Y TRATAMIENTO DE SUS DATOS PERSONALES.</p><br> ' +
+   '<p style="text-align:left;font-family:Lato;padding-left:5%;padding-right:5%;">DISATEL S.A. DE MÉXICO S.A. de C.V.  es la responsable de recabar su datos personales, del uso y tratamiento que se haga de los mismos,  circunscribiendo por su puesto su protección.</p><br> ' +
+   '<p style="text-align:left;font-family:Lato;padding-left:5%;padding-right:5%;">FINALIDAD DEL TRATAMIENTO DE SUS DATOS. Los datos personales  y documentos que recabamos de usted tiene como finalidad de darle la formalidad a la relación contractual que formaremos para brindarles los servicios de rastreo satelital y/o productos que ofrecemos  y almacenar su información en nuestra base de proveedores para enviarle.</p><br> ' +
+   '<p style="text-align:left;font-family:Lato;padding-left:5%;padding-right:5%;">Datos que quedan protegidos bajo el resguardo de datos confidenciales que no se otorgan a ninguna autoridad salvo petición fundada y motivada que obligue a ello</p><br>' +
+   '<p style="text-align:left;font-family:Lato;padding-left:5%;padding-right:5%;">DATOS PERSONALES QUE SE RECABAN. Nombre, teléfonos, correo electrónico, domicilio, dirección fiscal, teléfono (móvil y fijo) dirección e identificación oficial de sus representantes, datos financieros</p><br> ' +
+   '<p style="text-align:left;font-family:Lato;padding-left:5%;padding-right:5%;">CAMBIOS AL PRESENTE AVISO. Nos reservamos el derecho a efectuar en cualquier momento modificaciones o actualizaciones al presente aviso de privacidad, para la atención de novedades legislativas.</p><br> ' +
+   '<p style="text-align:left;font-family:Lato;padding-left:5%;padding-right:5%;">LA EMPRESA DISATEL S.A. DE MÉXICO S.A. de C.V. se compromete al cumplimiento de su obligación de secreto de datos de carácter personal y de su deber de conservarlos custodiados a través de medidas de seguridad de índole técnica y organizativas, que garanticen la seguridad de los mismos, eviten su alteración, pérdida, deterioro, tratamiento o acceso no autorizados y los posibles riesgos a que pudieran estar expuestos. Por su parte el usuario se compromete a que la información que suministra sea veraz y a actualizar la misma en caso que sgra alguna modificación.</p>',
   width: 1500,
   confirmButtonColor: '#E01F26',
   confirmButtonText: '<p style="font-family:Lato;text-align:center;padding-top:5px;">ENTENDIDO</p>'
