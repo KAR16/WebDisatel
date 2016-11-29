@@ -683,7 +683,7 @@ textarea::-moz-placeholder{
 .disatelFooter2{
   background-color: #e11b22;
   height: 20px;
-  margin-top: -1%;
+  margin-top: -2%;
 }
 
 /**************************** Media Querys *****************************/
@@ -904,6 +904,10 @@ textarea::-moz-placeholder{
       margin-bottom: 2%;
       padding-left: 3%;
       display: block;
+    }
+
+    .footerDisatel{
+      margin-top: -1%;
     }
 }
 

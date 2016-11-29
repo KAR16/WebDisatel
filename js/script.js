@@ -248,11 +248,14 @@ $('.AVISO').click(function() {
   // type: 'warning',
   width: 1500,
   confirmButtonColor: '#E01F26',
-  confirmButtonText: '<p style="font-family:Lato;text-align:center;padding-top:5px;">ENTENDIDO</p>',
-  dropShadow: "#FFF"
-  // padding: 100,
-  // background: '#fff url(//bit.ly/1Nqn9HU)'
+  confirmButtonText: '<p style="font-family:Lato;text-align:center;padding-top:5px;">ENTENDIDO</p>'
   })
+});
+
+$(window).load(function() { // better to use $(document).ready(function(){
+    $('.AU').on('click touchstart', function() {
+        $('.Div').slideDown('500');
+    });
 });
 
 $('[data-submenu]').submenupicker();
